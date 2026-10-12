@@ -1,0 +1,654 @@
+<svg width="874" height="587" viewBox="0 0 874 587" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+@keyframes kf_haj_transform_0 {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(0px) translateY(0px) translate(301.244px, 152.756px) rotate(0rad) translate(-301.244px, -152.756px);
+  }
+  6.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(2.467px) translateY(9.868px) translate(301.244px, 152.756px) rotate(-0.062rad) translate(-301.244px, -152.756px);
+  }
+  12.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(3.833px) translateY(8.836px) translate(301.244px, 152.756px) rotate(-0.087rad) translate(-301.244px, -152.756px);
+  }
+  18.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(2.467px) translateY(9.868px) translate(301.244px, 152.756px) rotate(-0.062rad) translate(-301.244px, -152.756px);
+  }
+  25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(0px) translateY(0px) translate(301.244px, 152.756px) rotate(0rad) translate(-301.244px, -152.756px);
+  }
+  31.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(-1.32px) translateY(-27.286px) translate(301.244px, 152.756px) rotate(0.062rad) translate(-301.244px, -152.756px);
+  }
+  37.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(-1.54px) translateY(-43.674px) translate(301.244px, 152.756px) rotate(0.087rad) translate(-301.244px, -152.756px);
+  }
+  43.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(-1.32px) translateY(-27.286px) translate(301.244px, 152.756px) rotate(0.062rad) translate(-301.244px, -152.756px);
+  }
+  50% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(0px) translateY(0px) translate(301.244px, 152.756px) rotate(0rad) translate(-301.244px, -152.756px);
+  }
+  56.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(2.467px) translateY(9.868px) translate(301.244px, 152.756px) rotate(-0.062rad) translate(-301.244px, -152.756px);
+  }
+  62.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(3.833px) translateY(8.836px) translate(301.244px, 152.756px) rotate(-0.087rad) translate(-301.244px, -152.756px);
+  }
+  68.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(2.467px) translateY(9.868px) translate(301.244px, 152.756px) rotate(-0.062rad) translate(-301.244px, -152.756px);
+  }
+  75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(0px) translateY(0px) translate(301.244px, 152.756px) rotate(0rad) translate(-301.244px, -152.756px);
+  }
+  81.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(-1.32px) translateY(-27.286px) translate(301.244px, 152.756px) rotate(0.062rad) translate(-301.244px, -152.756px);
+  }
+  87.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(-1.54px) translateY(-43.674px) translate(301.244px, 152.756px) rotate(0.087rad) translate(-301.244px, -152.756px);
+  }
+  93.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(136px) translateY(141px) translateX(-1.32px) translateY(-27.286px) translate(301.244px, 152.756px) rotate(0.062rad) translate(-301.244px, -152.756px);
+  }
+  100% {
+    transform: translateX(136px) translateY(141px) translateX(0px) translateY(0px) translate(301.244px, 152.756px) rotate(0rad) translate(-301.244px, -152.756px);
+  }
+}
+#haj {
+  transform-origin: 0 0;
+  animation: kf_haj_transform_0 4s linear infinite;
+}
+@keyframes kf_bagfinde_transform_0 {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(0px) translateY(0px) translate(60.25px, 95.78px) rotate(0rad) translate(-60.25px, -95.78px);
+  }
+  3.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-12.194px) translateY(1.866px) translate(60.25px, 95.78px) rotate(-0.123rad) translate(-60.25px, -95.78px);
+  }
+  6.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-17.161px) translateY(3.076px) translate(60.25px, 95.78px) rotate(-0.175rad) translate(-60.25px, -95.78px);
+  }
+  9.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-12.194px) translateY(1.866px) translate(60.25px, 95.78px) rotate(-0.123rad) translate(-60.25px, -95.78px);
+  }
+  12.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(0px) translateY(0px) translate(60.25px, 95.78px) rotate(0rad) translate(-60.25px, -95.78px);
+  }
+  15.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(12.331px) translateY(-0.35px) translate(60.25px, 95.78px) rotate(0.123rad) translate(-60.25px, -95.78px);
+  }
+  18.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(17.434px) translateY(-0.05px) translate(60.25px, 95.78px) rotate(0.175rad) translate(-60.25px, -95.78px);
+  }
+  21.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(12.331px) translateY(-0.35px) translate(60.25px, 95.78px) rotate(0.123rad) translate(-60.25px, -95.78px);
+  }
+  25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(0px) translateY(0px) translate(60.25px, 95.78px) rotate(0rad) translate(-60.25px, -95.78px);
+  }
+  28.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-12.194px) translateY(1.866px) translate(60.25px, 95.78px) rotate(-0.123rad) translate(-60.25px, -95.78px);
+  }
+  31.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-17.161px) translateY(3.076px) translate(60.25px, 95.78px) rotate(-0.175rad) translate(-60.25px, -95.78px);
+  }
+  34.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-12.194px) translateY(1.866px) translate(60.25px, 95.78px) rotate(-0.123rad) translate(-60.25px, -95.78px);
+  }
+  37.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(0px) translateY(0px) translate(60.25px, 95.78px) rotate(0rad) translate(-60.25px, -95.78px);
+  }
+  40.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(12.331px) translateY(-0.35px) translate(60.25px, 95.78px) rotate(0.123rad) translate(-60.25px, -95.78px);
+  }
+  43.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(17.434px) translateY(-0.05px) translate(60.25px, 95.78px) rotate(0.175rad) translate(-60.25px, -95.78px);
+  }
+  46.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(12.331px) translateY(-0.35px) translate(60.25px, 95.78px) rotate(0.123rad) translate(-60.25px, -95.78px);
+  }
+  50% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(0px) translateY(0px) translate(60.25px, 95.78px) rotate(0rad) translate(-60.25px, -95.78px);
+  }
+  53.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-12.194px) translateY(1.866px) translate(60.25px, 95.78px) rotate(-0.123rad) translate(-60.25px, -95.78px);
+  }
+  56.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-17.161px) translateY(3.076px) translate(60.25px, 95.78px) rotate(-0.175rad) translate(-60.25px, -95.78px);
+  }
+  59.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-12.194px) translateY(1.866px) translate(60.25px, 95.78px) rotate(-0.123rad) translate(-60.25px, -95.78px);
+  }
+  62.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(0px) translateY(0px) translate(60.25px, 95.78px) rotate(0rad) translate(-60.25px, -95.78px);
+  }
+  65.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(12.331px) translateY(-0.35px) translate(60.25px, 95.78px) rotate(0.123rad) translate(-60.25px, -95.78px);
+  }
+  68.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(17.434px) translateY(-0.05px) translate(60.25px, 95.78px) rotate(0.175rad) translate(-60.25px, -95.78px);
+  }
+  71.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(12.331px) translateY(-0.35px) translate(60.25px, 95.78px) rotate(0.123rad) translate(-60.25px, -95.78px);
+  }
+  75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(0px) translateY(0px) translate(60.25px, 95.78px) rotate(0rad) translate(-60.25px, -95.78px);
+  }
+  78.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-12.194px) translateY(1.866px) translate(60.25px, 95.78px) rotate(-0.123rad) translate(-60.25px, -95.78px);
+  }
+  81.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-17.161px) translateY(3.076px) translate(60.25px, 95.78px) rotate(-0.175rad) translate(-60.25px, -95.78px);
+  }
+  84.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(-12.194px) translateY(1.866px) translate(60.25px, 95.78px) rotate(-0.123rad) translate(-60.25px, -95.78px);
+  }
+  87.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(0px) translateY(0px) translate(60.25px, 95.78px) rotate(0rad) translate(-60.25px, -95.78px);
+  }
+  90.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(12.331px) translateY(-0.35px) translate(60.25px, 95.78px) rotate(0.123rad) translate(-60.25px, -95.78px);
+  }
+  93.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(17.434px) translateY(-0.05px) translate(60.25px, 95.78px) rotate(0.175rad) translate(-60.25px, -95.78px);
+  }
+  96.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(481.987px) translateY(16.512px) translateX(12.331px) translateY(-0.35px) translate(60.25px, 95.78px) rotate(0.123rad) translate(-60.25px, -95.78px);
+  }
+  100% {
+    transform: translateX(481.987px) translateY(16.512px) translateX(0px) translateY(0px) translate(60.25px, 95.78px) rotate(0rad) translate(-60.25px, -95.78px);
+  }
+}
+#bagfinde {
+  transform-origin: 0 0;
+  animation: kf_bagfinde_transform_0 4s linear infinite;
+}
+@keyframes kf_lille_finde_transform_0 {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0px) translateY(0px) translate(27.926px, 25.286px) rotate(0rad) translate(-27.926px, -25.286px);
+  }
+  3.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.286px) translateY(3.392px) translate(27.926px, 25.286px) rotate(-0.086rad) translate(-27.926px, -25.286px);
+  }
+  6.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.318px) translateY(4.802px) translate(27.926px, 25.286px) rotate(-0.122rad) translate(-27.926px, -25.286px);
+  }
+  9.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.286px) translateY(3.392px) translate(27.926px, 25.286px) rotate(-0.086rad) translate(-27.926px, -25.286px);
+  }
+  12.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0px) translateY(0px) translate(27.926px, 25.286px) rotate(0rad) translate(-27.926px, -25.286px);
+  }
+  15.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.577px) translateY(-3.355px) translate(27.926px, 25.286px) rotate(0.086rad) translate(-27.926px, -25.286px);
+  }
+  18.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.901px) translateY(-4.727px) translate(27.926px, 25.286px) rotate(0.122rad) translate(-27.926px, -25.286px);
+  }
+  21.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.577px) translateY(-3.355px) translate(27.926px, 25.286px) rotate(0.086rad) translate(-27.926px, -25.286px);
+  }
+  25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0px) translateY(0px) translate(27.926px, 25.286px) rotate(0rad) translate(-27.926px, -25.286px);
+  }
+  28.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.286px) translateY(3.392px) translate(27.926px, 25.286px) rotate(-0.086rad) translate(-27.926px, -25.286px);
+  }
+  31.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.318px) translateY(4.802px) translate(27.926px, 25.286px) rotate(-0.122rad) translate(-27.926px, -25.286px);
+  }
+  34.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.286px) translateY(3.392px) translate(27.926px, 25.286px) rotate(-0.086rad) translate(-27.926px, -25.286px);
+  }
+  37.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0px) translateY(0px) translate(27.926px, 25.286px) rotate(0rad) translate(-27.926px, -25.286px);
+  }
+  40.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.577px) translateY(-3.355px) translate(27.926px, 25.286px) rotate(0.086rad) translate(-27.926px, -25.286px);
+  }
+  43.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.901px) translateY(-4.727px) translate(27.926px, 25.286px) rotate(0.122rad) translate(-27.926px, -25.286px);
+  }
+  46.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.577px) translateY(-3.355px) translate(27.926px, 25.286px) rotate(0.086rad) translate(-27.926px, -25.286px);
+  }
+  50% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0px) translateY(0px) translate(27.926px, 25.286px) rotate(0rad) translate(-27.926px, -25.286px);
+  }
+  53.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.286px) translateY(3.392px) translate(27.926px, 25.286px) rotate(-0.086rad) translate(-27.926px, -25.286px);
+  }
+  56.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.318px) translateY(4.802px) translate(27.926px, 25.286px) rotate(-0.122rad) translate(-27.926px, -25.286px);
+  }
+  59.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.286px) translateY(3.392px) translate(27.926px, 25.286px) rotate(-0.086rad) translate(-27.926px, -25.286px);
+  }
+  62.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0px) translateY(0px) translate(27.926px, 25.286px) rotate(0rad) translate(-27.926px, -25.286px);
+  }
+  65.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.577px) translateY(-3.355px) translate(27.926px, 25.286px) rotate(0.086rad) translate(-27.926px, -25.286px);
+  }
+  68.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.901px) translateY(-4.727px) translate(27.926px, 25.286px) rotate(0.122rad) translate(-27.926px, -25.286px);
+  }
+  71.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.577px) translateY(-3.355px) translate(27.926px, 25.286px) rotate(0.086rad) translate(-27.926px, -25.286px);
+  }
+  75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0px) translateY(0px) translate(27.926px, 25.286px) rotate(0rad) translate(-27.926px, -25.286px);
+  }
+  78.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.286px) translateY(3.392px) translate(27.926px, 25.286px) rotate(-0.086rad) translate(-27.926px, -25.286px);
+  }
+  81.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.318px) translateY(4.802px) translate(27.926px, 25.286px) rotate(-0.122rad) translate(-27.926px, -25.286px);
+  }
+  84.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(-0.286px) translateY(3.392px) translate(27.926px, 25.286px) rotate(-0.086rad) translate(-27.926px, -25.286px);
+  }
+  87.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0px) translateY(0px) translate(27.926px, 25.286px) rotate(0rad) translate(-27.926px, -25.286px);
+  }
+  90.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.577px) translateY(-3.355px) translate(27.926px, 25.286px) rotate(0.086rad) translate(-27.926px, -25.286px);
+  }
+  93.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.901px) translateY(-4.727px) translate(27.926px, 25.286px) rotate(0.122rad) translate(-27.926px, -25.286px);
+  }
+  96.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(180.635px) translateY(235.512px) translateX(0.577px) translateY(-3.355px) translate(27.926px, 25.286px) rotate(0.086rad) translate(-27.926px, -25.286px);
+  }
+  100% {
+    transform: translateX(180.635px) translateY(235.512px) translateX(0px) translateY(0px) translate(27.926px, 25.286px) rotate(0rad) translate(-27.926px, -25.286px);
+  }
+}
+#lille_finde {
+  transform-origin: 0 0;
+  animation: kf_lille_finde_transform_0 4s linear infinite;
+}
+@keyframes kf_under_finde_transform_0 {
+  0% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0px) translateY(0px) translate(55.446px, 47.75px) rotate(0rad) translate(-55.446px, -47.75px);
+  }
+  3.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0.859px) translateY(-1.382px) translate(55.446px, 47.75px) rotate(0.099rad) translate(-55.446px, -47.75px);
+  }
+  6.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(1.254px) translateY(-1.928px) translate(55.446px, 47.75px) rotate(0.14rad) translate(-55.446px, -47.75px);
+  }
+  9.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0.859px) translateY(-1.382px) translate(55.446px, 47.75px) rotate(0.099rad) translate(-55.446px, -47.75px);
+  }
+  12.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0px) translateY(0px) translate(55.446px, 47.75px) rotate(0rad) translate(-55.446px, -47.75px);
+  }
+  15.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.718px) translateY(1.46px) translate(55.446px, 47.75px) rotate(-0.099rad) translate(-55.446px, -47.75px);
+  }
+  18.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.973px) translateY(2.084px) translate(55.446px, 47.75px) rotate(-0.14rad) translate(-55.446px, -47.75px);
+  }
+  21.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.718px) translateY(1.46px) translate(55.446px, 47.75px) rotate(-0.099rad) translate(-55.446px, -47.75px);
+  }
+  25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0px) translateY(0px) translate(55.446px, 47.75px) rotate(0rad) translate(-55.446px, -47.75px);
+  }
+  28.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0.859px) translateY(-1.382px) translate(55.446px, 47.75px) rotate(0.099rad) translate(-55.446px, -47.75px);
+  }
+  31.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(1.254px) translateY(-1.928px) translate(55.446px, 47.75px) rotate(0.14rad) translate(-55.446px, -47.75px);
+  }
+  34.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0.859px) translateY(-1.382px) translate(55.446px, 47.75px) rotate(0.099rad) translate(-55.446px, -47.75px);
+  }
+  37.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0px) translateY(0px) translate(55.446px, 47.75px) rotate(0rad) translate(-55.446px, -47.75px);
+  }
+  40.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.718px) translateY(1.46px) translate(55.446px, 47.75px) rotate(-0.099rad) translate(-55.446px, -47.75px);
+  }
+  43.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.973px) translateY(2.084px) translate(55.446px, 47.75px) rotate(-0.14rad) translate(-55.446px, -47.75px);
+  }
+  46.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.718px) translateY(1.46px) translate(55.446px, 47.75px) rotate(-0.099rad) translate(-55.446px, -47.75px);
+  }
+  50% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0px) translateY(0px) translate(55.446px, 47.75px) rotate(0rad) translate(-55.446px, -47.75px);
+  }
+  53.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0.859px) translateY(-1.382px) translate(55.446px, 47.75px) rotate(0.099rad) translate(-55.446px, -47.75px);
+  }
+  56.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(1.254px) translateY(-1.928px) translate(55.446px, 47.75px) rotate(0.14rad) translate(-55.446px, -47.75px);
+  }
+  59.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0.859px) translateY(-1.382px) translate(55.446px, 47.75px) rotate(0.099rad) translate(-55.446px, -47.75px);
+  }
+  62.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0px) translateY(0px) translate(55.446px, 47.75px) rotate(0rad) translate(-55.446px, -47.75px);
+  }
+  65.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.718px) translateY(1.46px) translate(55.446px, 47.75px) rotate(-0.099rad) translate(-55.446px, -47.75px);
+  }
+  68.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.973px) translateY(2.084px) translate(55.446px, 47.75px) rotate(-0.14rad) translate(-55.446px, -47.75px);
+  }
+  71.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.718px) translateY(1.46px) translate(55.446px, 47.75px) rotate(-0.099rad) translate(-55.446px, -47.75px);
+  }
+  75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0px) translateY(0px) translate(55.446px, 47.75px) rotate(0rad) translate(-55.446px, -47.75px);
+  }
+  78.13% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0.859px) translateY(-1.382px) translate(55.446px, 47.75px) rotate(0.099rad) translate(-55.446px, -47.75px);
+  }
+  81.25% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(1.254px) translateY(-1.928px) translate(55.446px, 47.75px) rotate(0.14rad) translate(-55.446px, -47.75px);
+  }
+  84.38% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0.859px) translateY(-1.382px) translate(55.446px, 47.75px) rotate(0.099rad) translate(-55.446px, -47.75px);
+  }
+  87.5% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(0px) translateY(0px) translate(55.446px, 47.75px) rotate(0rad) translate(-55.446px, -47.75px);
+  }
+  90.63% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.718px) translateY(1.46px) translate(55.446px, 47.75px) rotate(-0.099rad) translate(-55.446px, -47.75px);
+  }
+  93.75% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.973px) translateY(2.084px) translate(55.446px, 47.75px) rotate(-0.14rad) translate(-55.446px, -47.75px);
+  }
+  96.88% {
+    animation-timing-function: ease-in-out;
+    transform: translateX(265.987px) translateY(210.012px) translateX(-0.718px) translateY(1.46px) translate(55.446px, 47.75px) rotate(-0.099rad) translate(-55.446px, -47.75px);
+  }
+  100% {
+    transform: translateX(265.987px) translateY(210.012px) translateX(0px) translateY(0px) translate(55.446px, 47.75px) rotate(0rad) translate(-55.446px, -47.75px);
+  }
+}
+#under_finde {
+  transform-origin: 0 0;
+  animation: kf_under_finde_transform_0 4s linear infinite;
+}
+</style>
+<g id="hammerhaj" clip-path="url(#clip0_137_25229)">
+<g id="haj" transform="translate(136 141)">
+<g id="bagfinde" filter="url(#filter0_ii_137_25229)" transform="translate(481.987 16.5119)">
+<path d="M120.5 0C75.2134 15.8082 48.4591 45.5778 0 110V123.5C43.9436 173.126 64.9868 192.791 86.5 191.5C68.5261 143.806 64.4769 127.808 67.5 117.5C73.7943 83.745 82.4408 71.0237 98 48.5V39H112C110.051 19.1131 115.338 13.6015 120.5 0Z" id="bagfinde_bg_0" fill="#829DBE">
+</path>
+</g>
+<g id="Vector_1" filter="url(#filter1_ii_137_25229)">
+<path d="M12.9872 105.512C39.6416 93.4873 77.3978 82.525 87.4872 113.012C100.088 119.365 109.062 118.633 126.987 113.012C180.673 87.4048 210.247 80.3963 262.487 75.0119C302.076 17.214 321.889 -0.527851 351.987 0.0118819C346.9 18.3812 344.49 29.0617 342.987 50.5119C341.234 71.6832 345.014 80.1233 364.487 86.0119C389.497 94.108 403.639 96.2212 428.987 97.5119C439.502 89.2401 445.615 86.146 456.987 84.0119C458.312 92.6716 458.546 97.8753 456.987 108.512C473.58 110.976 482.543 111.114 494.834 109.141C506.438 113.671 511.472 118.124 515.487 132.512C513.662 144.299 510.107 149.892 495.89 156.707L461.987 179.012C460.163 187.661 455.813 194.02 464.487 209.012C450.431 210.997 445.553 206.606 428.987 198.512C377.453 226.068 341.56 238.053 278.987 247.512C139.908 244.898 82.5871 229.015 41.4872 158.012C-6.43807 153.556 -8.30426 115.117 12.9872 105.512Z" id="Vector_1_bg_0" fill="#829DBE">
+</path>
+</g>
+<g id="lille_finde" filter="url(#filter2_i_137_25229)" transform="translate(180.635 235.512)">
+<path d="M1.85281 34C-0.862131 18.9466 -0.360377 11.8304 1.85281 0L55.8528 4C39.7726 19.1449 31.1882 29.1656 16.8528 50.5C10.03 51.124 6.7038 47.8098 1.85281 34Z" id="lille_finde_bg_0" fill="#829DBE">
+</path>
+</g>
+<g id="Vector_7" filter="url(#filter3_f_137_25229)" transform="translate(235.987 159.512)">
+<path d="M3 0C8.99388 16.8262 9.6136 26.2472 0 43" stroke="black"/>
+</g>
+<g id="Vector_8" filter="url(#filter4_f_137_25229)" transform="translate(263.487 161.012)">
+<path d="M3 0C8.99388 16.8262 9.6136 26.2472 0 43" stroke="black"/>
+</g>
+<g id="Vector_9" filter="url(#filter5_f_137_25229)" transform="translate(248.487 161.012)">
+<path d="M3 0C8.99388 16.8262 9.6136 26.2472 0 43" stroke="black"/>
+</g>
+<g id="__je" transform="translate(6.4873 101.012)">
+<g id="Ellipse_7" filter="url(#filter6_f_137_25229)">
+<circle cx="26" cy="26" r="26" id="Ellipse_7_bg_0" fill="#6984A6">
+</circle>
+</g>
+<g id="Ellipse_4" filter="url(#filter7_i_137_25229)" transform="matrix(1 0 0 -1 7 45)">
+<circle cx="19.5" cy="19.5" r="19.5" id="Ellipse_4_bg_0" fill="white">
+</circle>
+</g>
+<circle id="Ellipse_5" transform="translate(17 11)" cx="8.5" cy="8.5" r="8.5" fill="#020202"/>
+<circle id="Ellipse_6" transform="translate(29 12)" cx="2.5" cy="2.5" r="2.5" fill="white"/>
+</g>
+<g id="__je_2" transform="translate(164.487 156.012)">
+<g id="Ellipse_7_2" filter="url(#filter8_f_137_25229)">
+<circle cx="26" cy="26" r="26" id="Ellipse_7_2_bg_0" fill="#6984A6">
+</circle>
+</g>
+<g id="Ellipse_4_2" filter="url(#filter9_i_137_25229)" transform="matrix(1 0 0 -1 5 47)">
+<circle cx="21" cy="21" r="21" id="Ellipse_4_2_bg_0" fill="white">
+</circle>
+</g>
+<circle id="Ellipse_5_2" transform="translate(16 12)" cx="8.53846" cy="8.53846" r="8.53846" fill="#020202"/>
+<path id="Ellipse_6_2" transform="translate(26 12)" d="M5.38462 2.69231C5.38462 4.17923 4.17923 5.38461 2.69231 5.38461C1.20539 5.38461 5.54383e-06 4.17923 5.54383e-06 2.69231C5.54383e-06 1.20539 1.20539 -1.19209e-06 2.69231 -1.19209e-06C4.17923 -1.19209e-06 5.38462 1.20539 5.38462 2.69231Z" fill="white"/>
+</g>
+<g id="Vector_2" filter="url(#filter10_f_137_25229)" transform="translate(137.487 145.512)">
+<path d="M12 0C19.9597 3.61742 24.7151 4.51701 34 3C63.5847 -2.2284 81.542 10.3518 82.5 32.5C83.5454 56.6686 71.608 74.1195 27 59.5C23.0785 53.0523 21.769 47.4734 14 43.5C6.23101 39.5266 0 48 0 48" stroke="black"/>
+</g>
+<path id="Vector_6" transform="translate(19.4873 153.012)" d="M15 0H0L20.5 6C74.2552 89.1942 145.607 98.2946 296.5 93C341.902 78.9408 366.624 69.0152 409 46.5C420.371 53.5292 429.665 57.0117 447 57.5C439.573 44.4039 439.804 37.7354 444.5 26.5C458.159 16.9999 463.281 11.9253 476.5 5.5L472.5 2C408.863 26.9433 372.688 40.1065 304.5 57.5L244.5 63.5C221.212 65.5017 211.989 61.6106 189.5 54C180.479 58.3925 169.046 58.4494 145.5 52.5C137.274 34.9342 127.129 30.9054 108.5 29C68.1283 28.1384 49.1576 21.2655 15 0Z" fill="#C8DDEE"/>
+<g id="under_finde" filter="url(#filter11_i_137_25229)" transform="translate(265.987 210.012)">
+<path d="M109 95.5C54.2568 88.821 30.9037 68.038 0 6L56 0C63.2269 7.91044 67.5295 10.1342 75.5 11.5C80.3973 42.8008 86.9964 59.4033 109 86.5C111.271 91.4662 111.762 93.7518 109 95.5Z" id="under_finde_bg_0" fill="#829DBE">
+</path>
+</g>
+<path id="Vector_10" transform="translate(88.4873 190.512)" d="M0 0C0.611435 0.548146 1.26207 1.07052 1.9337 1.55917C8.05525 5.94958 15.6934 7.88942 23.164 8.3938C30.6613 8.8466 38.3322 7.91619 45.2529 5.05388C46.0206 4.72995 46.7765 4.37749 47.5 4C46.7247 4.25461 45.9292 4.48639 45.1307 4.69405C37.9583 6.49478 30.5697 6.82981 23.2924 6.39793C16.0324 5.89258 8.71336 4.62293 2.13452 1.23656C1.40878 0.855566 0.692085 0.441946 0 0Z" fill="black"/>
+<path id="Vector_11" transform="translate(236.487 160.512)" d="M3 0C6.94368 15.8701 7.09429 24.6677 0 40M31 2.5C34.9437 18.3701 35.0943 27.1677 28 42.5M15.5 1.5C19.4437 17.3701 19.5943 26.1677 12.5 41.5" stroke="black" stroke-opacity="0.5" stroke-linecap="round"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_ii_137_25229" x="-15.4" y="-5" width="143.9" height="205.559" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-17" dy="-5"/>
+<feGaussianBlur stdDeviation="7.7"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_137_25229"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="8" dy="9"/>
+<feGaussianBlur stdDeviation="5.4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_137_25229" result="effect2_innerShadow_137_25229"/>
+</filter>
+<filter id="filter1_ii_137_25229" x="-15.4" y="0" width="534.887" height="255.512" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-26" dy="8"/>
+<feGaussianBlur stdDeviation="7.7"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_137_25229"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="17" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.991098 0 0 0 0 0.991098 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_137_25229" result="effect2_innerShadow_137_25229"/>
+</filter>
+<filter id="filter2_i_137_25229" x="0" y="0" width="59.8528" height="54.5712" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="11" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_137_25229"/>
+</filter>
+<filter id="filter3_f_137_25229" x="-4.43372" y="-4.16779" width="16.3208" height="51.4166" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_137_25229"/>
+</filter>
+<filter id="filter4_f_137_25229" x="-4.43365" y="-4.16779" width="16.3207" height="51.4166" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_137_25229"/>
+</filter>
+<filter id="filter5_f_137_25229" x="-4.43365" y="-4.16779" width="16.3207" height="51.4166" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_137_25229"/>
+</filter>
+<filter id="filter6_f_137_25229" x="-4.2449" y="-4.2449" width="60.4898" height="60.4898" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2.12245" result="effect1_foregroundBlur_137_25229"/>
+</filter>
+<filter id="filter7_i_137_25229" x="0" y="-4" width="43" height="43" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4" dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_137_25229"/>
+</filter>
+<filter id="filter8_f_137_25229" x="-4.2449" y="-4.2449" width="60.4898" height="60.4898" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2.12245" result="effect1_foregroundBlur_137_25229"/>
+</filter>
+<filter id="filter9_i_137_25229" x="0" y="-4.30769" width="46.3077" height="46.3077" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="4.30769" dy="4.30769"/>
+<feGaussianBlur stdDeviation="2.15385"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_137_25229"/>
+</filter>
+<filter id="filter10_f_137_25229" x="-2.20247" y="-2.2552" width="87.0642" height="69.4036" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="0.9" result="effect1_foregroundBlur_137_25229"/>
+</filter>
+<filter id="filter11_i_137_25229" x="0" y="-4" width="110.892" height="99.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-14"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_137_25229"/>
+</filter>
+<clipPath id="clip0_137_25229">
+<rect width="874" height="587" fill="white"/>
+</clipPath>
+</defs>
+</svg>

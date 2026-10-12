@@ -1,3 +1,8 @@
+
+body{
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +14,7 @@ main{
     display: flex;
     flex-direction: column;
     background-image: url('Akvarie-SVG-3.svg');
-    background-size: 100% auto;
+    background-size: 110% auto;
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -22,18 +27,31 @@ header {
 #water-area {
     flex: 1;
     padding: 2rem;
-    border: 2px dashed blue;
+    position: relative;
+}
+
+#fish-1 {
+    position: absolute;
+    top: 90%;
+    left: 0%;
+    z-index: 10;
+    animation: swim 20s linear infinite;
+}
+
+#fish-1 img{
+    width: 300px;
+    height:auto;
 }
 
 .clean-btn {
-    background-color: none;
+    background-color: transparent;
     border: none;
     padding:0;
     cursor: pointer;
 }
 
 #message-bottle img{
-    width: 50px;
+    width: 90px;
     height:auto;
 }
 
@@ -45,7 +63,31 @@ header {
 
 #message-bottle {
     position: absolute;
-    bottom: 10px;
-    left: 15%;
+    bottom: 140px;
+    left: 1%;
     z-index: 10;
+    transform-origin: bottom center;
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float{
+    0%{
+        transform: rotate(0deg) translateY(0px); }
+    50%{
+        transform: rotate(4deg) translateY(-5px); }
+    100%{
+        transform: rotate(0deg) translateY(0px); }
+
+}
+
+@keyframes swim {
+    0%{
+        transform: translateX(-250px) scalex(-1); }
+    49%{
+        transform: translateX(110vw) scalex(-1); }
+    50%{
+        transform: translateX(110vw) scalex(1); }
+    99%{
+        transform: translateX(-250vw) scalex(1); }
+    100%{
+        transform: translateX(-250vw) scalex(-1); }    
 }
