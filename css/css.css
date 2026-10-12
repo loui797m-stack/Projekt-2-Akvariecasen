@@ -1,6 +1,10 @@
 
 body{
     overflow-x: hidden;
+    margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
 }
 
 *{
@@ -10,14 +14,20 @@ body{
 }
 
 main{
-    min-height: 150vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url('Akvarie-SVG-3.svg');
-    background-size: 110% auto;
-    background-repeat: no-repeat;
-    background-position: top center;
+  width: 110%;
+  aspect-ratio: 1880/4017;
+  
+  display: flex;
+  flex-direction: column;
+  
+  background-image: url('Akvarie-SVG-3.svg');
+  background-size: 100% 100%; 
+  background-position: top center; 
+  background-repeat: no-repeat;
+
 }
+
+
 
 header {
     text-align: center;
@@ -57,8 +67,8 @@ header {
 
 #seabed {
     position: relative;
-    height: 250px;
-    padding:2rem;
+    height: 150px;
+    width: 100%;
 }
 
 #message-bottle {
