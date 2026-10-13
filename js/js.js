@@ -69,6 +69,9 @@ function visFisk(event) {
   // Vis boksen
   document.getElementById("fishInfo").hidden = false;
 
+// NY KODE: Frys fiskene
+document.body.classList.add("frys-fisk");
+
   // Afspil fiskens lyd
 lyd = new Audio(fisk.audioFile);
 lyd.play();
@@ -87,7 +90,7 @@ document.getElementById("louises_nutte").addEventListener("click", visFisk);
 // Luk boksen og stop musikken
 document.getElementById("closeFishInfo").addEventListener("click", function() {
   document.getElementById("fishInfo").hidden = true;
-
+document.body.classList.remove("frys-fisk");
 
  if (lyd) {
     lyd.pause();

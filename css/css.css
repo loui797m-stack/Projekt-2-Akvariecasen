@@ -361,3 +361,11 @@ html, body {
 .fish-info[hidden] {
   display: none;
 }
+
+
+/* --- PAUSE ANIMATIONER --- */
+body.frys-fisk #hammerhaj,
+body.frys-fisk #soehest,
+body.frys-fisk #louises_nutte {
+    animation-play-state: paused;
+}
