@@ -1,5 +1,17 @@
 let lyd;
 
+// Find "DYK NED" knappen
+const diveBtn = document.getElementById("dive-btn");
+
+if (diveBtn) {
+    diveBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: "smooth"
+        });
+    });
+}
+
 // Find flaskeposten og dialog-overlayet
 const flaskepostKnap = document.querySelector("#message-bottle");
 const mapOverlay = document.getElementById("map-overlay");
