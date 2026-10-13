@@ -25,14 +25,20 @@
 
         <!-- Selve det store vandområde, hvor fiskene svømmer -->
         <section id="water-area">
-          <button id="hammerhaj" class="clean-btn">
-            <img src="svg/louises_hammerhaj.svg" alt="Fisk 1" />
+          <button data-fish-id="F008" id="hammerhaj" class="clean-btn">
+            <img src="svg/louises_hammerhaj.svg" alt="Hammerhaj" />
           </button>
-          <button id="soehest" class="clean-btn">
-            <img src="svg/louises_søhest.svg" alt="søhesten" />
+          <div id="fishInfo" class="fish-info" hidden>
+            <button id="closeFishInfo" aria-label="Luk">×</button>
+            <h2 id="fishName"></h2>
+            <p id="fishHabitat"></p>
+            <p id="fishFact"></p>
+          </div>
+          <button data-fish-id="F004" id="soehest" class="clean-btn">
+            <img src="svg/louises_søhest.svg" alt="Søhest" />
           </button>
           <section>
-            <button id="louises_nutte" class="clean-btn">
+            <button data-fish-id="F007" id="louises_nutte" class="clean-btn">
               <img
                 id="nutte_img"
                 src="svg/louises_nutte1.svg"
@@ -76,6 +82,7 @@
         alt="Sten og tang baggrund"
       />
     </main>
+    <script src="js/fiskData.js" defer></script>
     <script src="js/js.js" defer></script>
   </body>
 </html>
