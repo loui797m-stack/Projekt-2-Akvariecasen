@@ -8,12 +8,14 @@
 html, body {
     width: 100%;
     overflow-x: hidden; 
+    background-color: #0089d0;
 }
 
 /* Hovedrammen der holder alle lagene sammen */
 .aquarium {
     width: 100%;
     position: relative; 
+    overflow: hidden;
 }
 
 /* --- LAG-STYRING --- */
@@ -42,7 +44,7 @@ html, body {
 }
 .third-layer {
     position: absolute;
-    top: 750px;
+    top: 850px;
     left: 0;
     width: 110%;
     height: 100%;
@@ -117,7 +119,7 @@ header {
 
 #message-bottle {
     position: absolute;
-    bottom: 250px;
+    bottom: 100px;
     left: 10%;
     z-index: 1000;
     transform-origin: bottom center;
