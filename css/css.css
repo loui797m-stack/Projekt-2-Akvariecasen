@@ -1,37 +1,84 @@
 
-body{
-    overflow-x: hidden;
-    margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100%;
-}
-
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-main{
-  width: 110%;
-  aspect-ratio: 1880/4017;
-  
-  display: flex;
-  flex-direction: column;
-  
-  background-image: url('Akvarie-SVG-3.svg');
-  background-size: 100% 100%; 
-  background-position: top center; 
-  background-repeat: no-repeat;
+html, body {
+    width: 100%;
+    overflow-x: hidden; 
+}
 
+/* Hovedrammen der holder alle lagene sammen */
+.aquarium {
+    width: 100%;
+    position: relative; 
+}
+
+/* --- LAG-STYRING --- */
+
+/* Fælles for billederne */
+.layer {
+    width: 100%;
+    display: block;
+}
+
+.back-layer {
+    width: 110%;
+    left:-1;
+    margin-left:auto;
+    margin-right:auto;
+    height: auto; 
+    z-index: 1; 
+}
+.second-layer {
+    position: absolute;
+    top: 880px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4; 
+}
+.third-layer {
+    position: absolute;
+    top: 750px;
+    left: 0;
+    width: 110%;
+    height: 100%;
+    z-index: 3; 
+}
+.front-layer {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    pointer-events: none;
+
+    transform: scale(1);
+    transform-origin: bottom center;
 }
 
 
+#interactive-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- INDHOLD --- */
 
 header {
     text-align: center;
     padding: 2rem;
+    z-index: 10;
 }
 
 #water-area {
@@ -40,64 +87,60 @@ header {
     position: relative;
 }
 
-#fish-1 {
-    position: absolute;
-    top: 90%;
-    left: 0%;
-    z-index: 10;
-    animation: swim 20s linear infinite;
-}
-
-#fish-1 img{
-    width: 300px;
-    height:auto;
+#seabed {
+    position: relative;
+    height: 1px;
+    width: 100%;
 }
 
 .clean-btn {
     background-color: transparent;
     border: none;
-    padding:0;
+    padding: 0;
     cursor: pointer;
 }
 
-#message-bottle img{
-    width: 90px;
-    height:auto;
+/* --- FISK & FLASKEPOST --- */
+
+#fish-1 {
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    z-index: 10;
+    animation: swim 20s linear infinite;
 }
 
-#seabed {
-    position: relative;
-    height: 150px;
-    width: 100%;
+#fish-1 img {
+    width: 700px;
+    height: auto;
 }
 
 #message-bottle {
     position: absolute;
-    bottom: 140px;
-    left: 1%;
-    z-index: 10;
+    bottom: 250px;
+    left: 10%;
+    z-index: 1000;
     transform-origin: bottom center;
     animation: float 4s ease-in-out infinite;
 }
-@keyframes float{
-    0%{
-        transform: rotate(0deg) translateY(0px); }
-    50%{
-        transform: rotate(4deg) translateY(-5px); }
-    100%{
-        transform: rotate(0deg) translateY(0px); }
 
+#message-bottle img {
+    width: 250px;
+    height: auto;
+}
+
+/* --- ANIMATIONER --- */
+
+@keyframes float {
+    0% { transform: rotate(0deg) translateY(0px); }
+    50% { transform: rotate(4deg) translateY(-5px); }
+    100% { transform: rotate(0deg) translateY(0px); }
 }
 
 @keyframes swim {
-    0%{
-        transform: translateX(-250px) scalex(-1); }
-    49%{
-        transform: translateX(110vw) scalex(-1); }
-    50%{
-        transform: translateX(110vw) scalex(1); }
-    99%{
-        transform: translateX(-250vw) scalex(1); }
-    100%{
-        transform: translateX(-250vw) scalex(-1); }    
+    0% { transform: translateX(-250px) scaleX(-1); }
+    49% { transform: translateX(110vw) scaleX(-1); }
+    50% { transform: translateX(110vw) scaleX(1); }
+    99% { transform: translateX(-250vw) scaleX(1); }
+    100% { transform: translateX(-250vw) scaleX(-1); }
 }
