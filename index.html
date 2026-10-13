@@ -8,48 +8,67 @@
   </head>
   <body>
     <main class="aquarium">
-      
       <!-- LAG 1: Baggrundsvandet (Styrer hele sidens højde, så scroll virker perfekt) -->
-      <img src="css/Baggrund.svg" class="layer back-layer" alt="Vand baggrund">
+      <img
+        src="css/Baggrund.svg"
+        class="layer back-layer"
+        alt="Vand baggrund"
+      />
 
       <!-- LAG 2: Det interaktive lag (Fisk, flaskepost og tekst) -->
       <div id="interactive-layer">
-        
         <!-- Tekstområde i toppen -->
         <header>
           <h1>Dyk ned og syng med fiskene!</h1>
           <p>Tryk på knappen og tag med på et musikalsk undervandseventyr!</p>
         </header>
-        
+
         <!-- Selve det store vandområde, hvor fiskene svømmer -->
         <section id="water-area">
           <button id="fish-1" class="clean-btn">
-              <img src="svg/louises_hammerhaj.svg" alt="Fisk 1">
+            <img src="svg/louises_hammerhaj.svg" alt="Fisk 1" />
           </button>
           <button id="fish-2" class="clean-btn">
-              <img src="css/fisk2.svg" alt="Fisk 2">
+            <img src="css/fisk2.svg" alt="Fisk 2" />
           </button>
           <button id="fish-3" class="clean-btn">
-              <img src="css/fisk3.svg" alt="Fisk 3">
+            <img src="css/fisk3.svg" alt="Fisk 3" />
           </button>
         </section>
 
         <!-- Havbunden med knapperne -->
         <section id="seabed">
           <button id="message-bottle" class="clean-btn">
-              <img src="svg/louises_flaskepost.svg" alt="Hemmelig flaskepost på havbund">
+            <img
+              src="svg/louises_flaskepost.svg"
+              alt="Hemmelig flaskepost på havbund"
+            />
           </button>
           <button class="placeholder-btn" id="crab">krabbe</button>
         </section>
-
       </div>
 
-      <!-- LAG 3: Sandet og tangen der ligger yderst (Dækker over fiskene) -->
-      <img src="svg/Sand_forgrund.svg" class="layer front-layer" alt="Havbund sand">
+      <img src="svg/bobler.svg" class="bobler" id="bobler_1" alt="bobler" />
+      <img src="svg/bobler.svg" class="bobler" id="bobler_2" alt="bobler" />
 
-      <img src="svg/mellemgrund.svg" class="layer second-layer" alt="pink koral">
-      
-      <img src="svg/baggrund.svg" class="layer third-layer" alt="Sten og tang baggrund">
+      <!-- LAG 3: Sandet og tangen der ligger yderst (Dækker over fiskene) -->
+      <img
+        src="svg/Sand_forgrund.svg"
+        class="layer front-layer"
+        alt="Havbund sand"
+      />
+
+      <img
+        src="svg/mellemgrund.svg"
+        class="layer second-layer"
+        alt="pink koral"
+      />
+
+      <img
+        src="svg/baggrund.svg"
+        class="layer third-layer"
+        alt="Sten og tang baggrund"
+      />
     </main>
     <script src="js/js.js" defer></script>
   </body>
