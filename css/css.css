@@ -142,6 +142,41 @@ header {
     width: 12vw;
     height: auto;
 }
+/* --- KORT OVERLAY --- */
+#map-overlay {
+    border: none;
+    background: transparent;
+    padding: 0;
+    outline: none;
+    margin: auto;
+}
+
+/* Den indbyggede mørke baggrund */
+#map-overlay::backdrop {
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+
+.map-container {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+#center-map {
+    max-width: 90vw; 
+    max-height: 80vh; 
+    border: 3px solid #70d9ff;
+    border-radius: 10px;
+    background-color: white; 
+}
+
+.map-container figcaption {
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 
 #louises_nutte {
     position: absolute;

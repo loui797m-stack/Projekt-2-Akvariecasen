@@ -1,8 +1,17 @@
 let lyd;
 
-const flaskepostKnap = document .querySelector("#message-bottle");
+// Find flaskeposten og dialog-overlayet
+const flaskepostKnap = document.querySelector("#message-bottle");
+const mapOverlay = document.getElementById("map-overlay");
+
+// Åbn kortet semantisk korrekt
 flaskepostKnap.addEventListener("click", function() {
-alert("Flaskeposten åbnes! Her kommer en hemmelig besked.");
+    mapOverlay.showModal(); 
+});
+
+// Luk kortet igen, uanset hvor man klikker på skærmen
+mapOverlay.addEventListener("click", function() {
+    mapOverlay.close(); 
 });
 
 // Vent til HTML-siden er helt indlæst
