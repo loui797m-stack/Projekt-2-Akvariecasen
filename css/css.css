@@ -131,6 +131,32 @@ header {
     height: auto;
 }
 
+
+
+#bobler_1{
+    bottom: 400px;
+    left: 10%;
+    z-index: 1000;
+    position: absolute;
+    transform-origin: bottom center;
+    animation: float 4s ease-in-out infinite;
+
+}
+
+#bobler_2{
+    bottom: 200px;
+    left: 40%;
+    z-index: 1000;
+    width: 15vw;
+    height: auto;
+    position: absolute;
+    transform-origin: bottom center;
+    animation: float 4s ease-in-out infinite;
+
+}
+
+
+
 /* --- ANIMATIONER --- */
 
 @keyframes float {
