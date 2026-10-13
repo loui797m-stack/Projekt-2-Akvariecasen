@@ -96,7 +96,8 @@ html, body {
     font-style: italic;
     color: #1a428a;
     margin: 0;
-    letter-spacing: -4px;
+    letter-spacing: -1px;
+    word-spacing: -5px;
 }
 
 #intro-header p {
