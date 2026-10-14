@@ -108,34 +108,66 @@ html, body {
     margin-bottom: 2rem;
 }
 
-/* --- DYK NED KNAP --- */
-#dive-btn {
-    position: relative;
-    background-color: #ff003c;
-    color: #000000;
-    font-family: 'Arial Black', sans-serif;
-    font-size: 2vw;
-    font-weight: 900;
-    padding: 1vw 4vw;
-    border: none;
-    border-radius: 50px; 
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: transform 0.2s; 
+/* --- DYK NED: RØD JELLY-KNAP --- */
+#dive-btn.jelly-dive {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 260px;
+  max-width: 90vw;
+  height: auto;
+  min-height: 76px;
+  margin: 65px auto 24px;
+  padding: 14px 26px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 999px;
+  background: #ff003c;
+  color: #000;
+  overflow: visible;
+  font-family: "Barlow", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  box-shadow:
+    inset 0 10px 14px #ff527b,
+    inset 0 -10px 14px #d80033,
+    0 7px 14px rgb(15 45 100 / 25%);
+  cursor: pointer;
+  touch-action: manipulation;
 }
 
-#dive-btn:hover {
-    transform: scale(1.05);
+/* Lysrefleks på knappen */
+#dive-btn.jelly-dive::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 20%;
+  width: 60%;
+  height: 3px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 65%);
+  filter: blur(1px);
+  pointer-events: none;
 }
 
-.crab-icon {
-    position: absolute;
-    top: -3vw;
-    right: 1vw; 
-    width: 6vw; 
-    height: auto;
-    pointer-events: none;
+/* Krabben står på knappens øverste højre kant */
+#dive-btn.jelly-dive .crab-icon {
+  position: absolute;
+  top: auto;
+  bottom: calc(100% - 35px);
+  right: -35px;
+  left: auto;
+  width: 200px;
+  height: auto;
+  margin: 0;
+  transform: rotate(12deg);
+  z-index: 2;
+  pointer-events: none;
 }
+
 #water-area {
     flex: 1;
     padding: 2rem;
@@ -148,25 +180,8 @@ html, body {
     width: 100%;
 }
 
-.clean-btn {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
 
-/* --- FISK & FLASKEPOST --- */
 
-/* Fælles for de fire nye fisk */
-#hornfisk,
-#konge-febars,
-#papegoejefisk,
-#pincetfisk {
-    position: absolute;
-    left: 0%;
-    top: 85%;
-    z-index: 12;      /* foran hajen */
-}
 
 /* Hornfisk (Klaudia) */
 #hornfisk {
@@ -424,4 +439,36 @@ body.frys-fisk #crab-1 {
     will-change: transform;
     transform: translateZ(0);
     backface-visibility: hidden;
+}
+
+/* Remove frame from buttons */
+.clean-btn {
+  appearance: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Keep these fish down in the water */
+#hornfisk,
+#konge-febars,
+#papegoejefisk,
+#pincetfisk {
+  position: absolute;
+  left: 0%;
+  top: 85%;
+  z-index: 12;
+}
+
+/* Storcenter Nord logo in the top-left corner */
+#center-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 140px;
+  max-width: 30vw;
+  height: auto;
+  z-index: 20;
 }

@@ -8,6 +8,11 @@
   </head>
   <body>
     <main class="aquarium">
+      <img
+      id="center-logo"
+      src="svg/STORCENTER_NORD-removebg-preview.png"
+      alt="Storcenter Nord"
+/>
       <!-- LAG 1: Baggrundsvandet (Styrer hele sidens højde, så scroll virker perfekt) -->
       <img
         src="css/Baggrund.svg"
@@ -25,9 +30,9 @@
           >
           </elastic-fish-hero>
 
-          <button id="dive-btn">
-            <img src="svg/krabbe.svg" class="crab-icon" alt="Krabbe" />
-            DYK NED!
+         <button id="dive-btn" class="jelly-dive" type="button">
+          <img src="svg/louises_krabbe.svg" class="crab-icon" alt="" />
+           <span>DYK NED!</span>
           </button>
         </header>
 
@@ -60,11 +65,7 @@
             <!-- TJEK filnavn -->
           </button>
 
-          <!-- F006 Krabbe ligger i #seabed, se nedenfor -->
-          <button data-fish-id="F006" id="Krabbe" class="clean-btn">
-            <img src="svg/louises_krappe.svg" alt="Krabbe 1" />
-          </button>
-
+      
           <!-- F007 Nutte / pindsvinefisk (Louise) -->
           <button data-fish-id="F007" id="louises_nutte" class="clean-btn">
             <img
