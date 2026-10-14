@@ -46,7 +46,7 @@ const fishData = [
     ],
     funFact:
       "Nogle papegøjefisk danner en beskyttende slimkappe, når de hviler.",
-    audioFile: "Papegøjefisk.mp3"
+  audioFile: "mp3/papegøjefisk.mp3"
   },
   {
     id: "F004",
@@ -128,4 +128,21 @@ const fishData = [
       "Hammerhajens hoved hjælper den med at registrere byttedyr, der gemmer sig under sandet.",
     audioFile: "mp3/Havets_sejeste_ven.mp3"
   }
+{
+    id: "F009",
+    name: "Kirurgfisk",
+    food: [
+        "Alger",
+        "Plankton"
+    ],
+    habitat: "Tropiske koralrev",
+    characteristics: [
+        "Blå krop",
+        "Gul hale",
+        "Skarpe pigge ved halen"
+    ],
+    funFact:
+        "Kirurgfisken har skarpe pigge ved halen, som den bruger til at forsvare sig.",
+    audioFile: "mp3/kirurgfisk.mp3"
+},
 ];

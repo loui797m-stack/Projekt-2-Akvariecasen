@@ -227,6 +227,21 @@ html, body {
     height: auto;
 }
 
+/* Kirurgfisk (Oksana) */
+#kirurgfisk {
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    z-index: 4;
+    animation: swim 30s linear infinite;
+    animation-delay: -15s;
+}
+
+#kirurgfisk img {
+    width: 22vw;
+    height: auto;
+}
+
 /* Hammerhaj (Louise) */
 #hammerhaj {
     position: absolute;
@@ -239,6 +254,8 @@ html, body {
     width: 60vw;
     height: auto;
 }
+
+
 
 #message-bottle {
     position: absolute;

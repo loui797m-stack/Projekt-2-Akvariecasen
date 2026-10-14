@@ -87,6 +87,9 @@ document.getElementById("konge-febars").addEventListener("click", visFisk);
 // Gør papegøjefisken klikbar
 document.getElementById("papegoejefisk").addEventListener("click", visFisk);
 
+// Gør kirurgfisken klikbar
+document.getElementById("kirurgfisk").addEventListener("click", visFisk);
+
 // Gør søhesten klikbar
 document.getElementById("soehest").addEventListener("click", visFisk);
 
