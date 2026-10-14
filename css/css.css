@@ -157,6 +157,77 @@ html, body {
 
 /* --- FISK & FLASKEPOST --- */
 
+/* Fælles for de fire nye fisk */
+#hornfisk,
+#konge-febars,
+#papegoejefisk,
+#pincetfisk {
+    position: absolute;
+    left: 0%;
+    top: 85%;
+    z-index: 12;      /* foran hajen */
+}
+
+/* Hornfisk (Klaudia) */
+#hornfisk {
+    margin-top: -14vw;
+    animation: swim 28s linear infinite;
+    animation-delay: -5s;
+}
+#hornfisk img {
+    width: 25vw;
+    height: auto;
+}
+
+/* Konge-febars (Klaudia) */
+#konge-febars {
+    margin-top: -7vw;
+    animation: swim_soehest 26s ease-in-out infinite;
+    animation-delay: -12s;
+}
+#konge-febars img {
+    width: 18vw;
+    height: auto;
+}
+
+/* Papegøjefisk (Oksana) */
+#papegoejefisk {
+    margin-top: 0vw;
+    animation: swim_soehest 32s ease-in-out infinite;
+    animation-delay: -20s;
+}
+#papegoejefisk img {
+    width: 22vw;
+    height: auto;
+}
+
+/* Pincetfisk (Louise) - tegnet med snuden mod højre, derfor reverse */
+#pincetfisk {
+    margin-top: 7vw;
+    animation: swim 24s linear infinite;
+    animation-delay: -8s;
+    animation-direction: reverse;
+}
+#pincetfisk img {
+    width: 14vw;
+    height: auto;
+}
+
+/* Søhest (Louise) */
+#soehest {
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    z-index: 4;
+    animation: swim_soehest 22s ease-in-out infinite;
+    animation-delay: -3s;
+}
+#soehest img {
+    width: 20vw;
+    height: auto;
+}
+
+/* Hammerhaj (Louise) */
 #hammerhaj {
     position: absolute;
     top: 75%;
@@ -164,19 +235,6 @@ html, body {
     z-index: 11;
     animation: swim 20s linear infinite;
 }
-
-#soehest {
-    position: absolute;
-    top: 75%;
-    left: 0%;
-    z-index:4;
-    animation: swim_soehest 22s ease-in-out infinite;}
-    
-#soehest img {
-    width: 20vw;
-    height: auto;
-}
-
 #hammerhaj img {
     width: 60vw;
     height: auto;
@@ -344,8 +402,13 @@ html, body {
 
 
 /* --- PAUSE ANIMATIONER --- */
-body.frys-fisk #hammerhaj,
+body.frys-fisk #hornfisk,
+body.frys-fisk #konge-febars,
+body.frys-fisk #papegoejefisk,
+body.frys-fisk #pincetfisk,
 body.frys-fisk #soehest,
-body.frys-fisk #louises_nutte {
+body.frys-fisk #hammerhaj,
+body.frys-fisk #louises_nutte,
+body.frys-fisk #crab-1 {
     animation-play-state: paused;
 }

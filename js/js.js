@@ -78,14 +78,29 @@ lyd.play();
 }
 
 
-// Gør hammerhajen klikbar
-document.getElementById("hammerhaj").addEventListener("click", visFisk);
+// Gør hornfisken klikbar
+document.getElementById("hornfisk").addEventListener("click", visFisk);
+
+// Gør konge-febars klikbar
+document.getElementById("konge-febars").addEventListener("click", visFisk);
+
+// Gør papegøjefisken klikbar
+document.getElementById("papegoejefisk").addEventListener("click", visFisk);
 
 // Gør søhesten klikbar
 document.getElementById("soehest").addEventListener("click", visFisk);
 
-// Gør søhesten klikbar
+// Gør pincetfisken klikbar
+document.getElementById("pincetfisk").addEventListener("click", visFisk);
+
+// Gør krabben klikbar
+document.getElementById("crab-1").addEventListener("click", visFisk);
+
+// Gør nutten klikbar
 document.getElementById("louises_nutte").addEventListener("click", visFisk);
+
+// Gør hammerhajen klikbar
+document.getElementById("hammerhaj").addEventListener("click", visFisk);
 
 // Luk boksen og stop musikken
 document.getElementById("closeFishInfo").addEventListener("click", function() {

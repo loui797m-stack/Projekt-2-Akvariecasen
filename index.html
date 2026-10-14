@@ -33,37 +33,59 @@
 
         <!-- Selve det store vandområde, hvor fiskene svømmer -->
         <section id="water-area">
+          <!-- F001 Hornfisk (Klaudia) -->
+          <button data-fish-id="F001" id="hornfisk" class="clean-btn">
+            <img src="svg/klaudias_Hornfisk.svg" alt="Hornfisk" />
+          </button>
+
+          <!-- F002 Konge-febars (Klaudia) -->
+          <button data-fish-id="F002" id="konge-febars" class="clean-btn">
+            <img src="svg/Klaudias_Konge-febars.svg" alt="Konge-febars" />
+          </button>
+
+          <!-- F003 Papegøjefisk (Oksana) -->
+          <button data-fish-id="F003" id="papegoejefisk" class="clean-btn">
+            <img src="svg/oksanas_papegøjefisk.svg" alt="Papegøjefisk" />
+            <!-- TJEK filnavn -->
+          </button>
+
+          <!-- F004 Søhest (Louise) -->
+          <button data-fish-id="F004" id="soehest" class="clean-btn">
+            <img src="svg/louises_soehest.svg" alt="Søhest" />
+          </button>
+
+          <!-- F005 Pincetfisk (Louise) -->
+          <button data-fish-id="F005" id="pincetfisk" class="clean-btn">
+            <img src="svg/louises_pincetfisk.svg" alt="Pincetfisk" />
+            <!-- TJEK filnavn -->
+          </button>
+
+          <!-- F006 Krabbe ligger i #seabed, se nedenfor -->
+          <button data-fish-id="F006" id="Krabbe" class="clean-btn">
+            <img src="svg/louises_krappe.svg" alt="Krabbe 1" />
+          </button>
+
+          <!-- F007 Nutte / pindsvinefisk (Louise) -->
+          <button data-fish-id="F007" id="louises_nutte" class="clean-btn">
+            <img
+              id="nutte_img"
+              src="svg/louises_nutte1.svg"
+              alt="Pindsvinefisk"
+            />
+          </button>
+
+          <!-- F008 Hammerhaj (Louise) -->
           <button data-fish-id="F008" id="hammerhaj" class="clean-btn">
             <img src="svg/louises_hammerhaj.svg" alt="Hammerhaj" />
           </button>
+
+          <!-- Infoboks (hører til alle fiskene, derfor sidst i vandområdet) -->
           <div id="fishInfo" class="fish-info" hidden>
             <button id="closeFishInfo" aria-label="Luk">×</button>
             <h2 id="fishName"></h2>
             <p id="fishHabitat"></p>
             <p id="fishFact"></p>
           </div>
-          <button data-fish-id="F004" id="soehest" class="clean-btn">
-            <img src="svg/louises_soehest.svg" alt="Søhest" />
-          </button>
-          <section>
-            <button data-fish-id="F007" id="louises_nutte" class="clean-btn">
-              <img
-                id="nutte_img"
-                src="svg/louises_nutte1.svg"
-                alt="pinsvinefisk"
-              />
-            </button>
-          </section>
-
-          <section>
-            <button data-fish-id="F001" id="louises_nutte" class="clean-btn">
-              <img
-                id="nutte_img"
-                src="svg/louises_nutte1.svg"
-                alt="pinsvinefisk"
-              />
-            </button>
-          </section>
         </section>
 
         <!-- Havbunden med knapperne -->
@@ -74,8 +96,8 @@
               alt="Hemmelig flaskepost på havbund"
             />
           </button>
-          <button id="crab-1" class="clean-btn">
-            <img src="svg/krappe lars.svg" alt="Krabbe 1" />
+          <button id="crab-1" data-fish-id="F006" class="clean-btn">
+            <img src="svg/louises_krabbe.svg" alt="Krabbe 1" />
           </button>
         </section>
       </div>
