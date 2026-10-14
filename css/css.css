@@ -173,6 +173,7 @@ html, body {
     margin-top: -14vw;
     animation: swim 28s linear infinite;
     animation-delay: -5s;
+    content-visibility: auto;
 }
 #hornfisk img {
     width: 25vw;
@@ -184,6 +185,7 @@ html, body {
     margin-top: -7vw;
     animation: swim_soehest 26s ease-in-out infinite;
     animation-delay: -12s;
+    content-visibility: auto;
 }
 #konge-febars img {
     width: 18vw;
@@ -195,6 +197,7 @@ html, body {
     margin-top: 0vw;
     animation: swim_soehest 32s ease-in-out infinite;
     animation-delay: -20s;
+    content-visibility: auto;
 }
 #papegoejefisk img {
     width: 22vw;
@@ -207,6 +210,7 @@ html, body {
     animation: swim 24s linear infinite;
     animation-delay: -8s;
     animation-direction: reverse;
+    content-visibility: auto;
 }
 #pincetfisk img {
     width: 14vw;
@@ -221,6 +225,7 @@ html, body {
     z-index: 4;
     animation: swim_soehest 22s ease-in-out infinite;
     animation-delay: -3s;
+    content-visibility: auto;
 }
 #soehest img {
     width: 20vw;
@@ -234,6 +239,7 @@ html, body {
     left: 0%;
     z-index: 11;
     animation: swim 20s linear infinite;
+    content-visibility: auto;
 }
 #hammerhaj img {
     width: 60vw;
@@ -288,6 +294,7 @@ html, body {
     background: transparent;
     border: none;
     cursor: pointer;
+    content-visibility: auto;
 }
     
 #louises_nutte img {
@@ -411,4 +418,10 @@ body.frys-fisk #hammerhaj,
 body.frys-fisk #louises_nutte,
 body.frys-fisk #crab-1 {
     animation-play-state: paused;
+}
+
+#hammerhaj, #soehest, #louises_nutte, #message-bottle, #bobler_1, #bobler_2 {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
