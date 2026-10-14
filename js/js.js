@@ -62,14 +62,14 @@ function visFisk(event) {
   // Vis fiskens oplysninger
   document.getElementById("fishName").textContent = fisk.name;
   document.getElementById("fishHabitat").textContent =
-    "Levested: " + fisk.habitat;
+    "Jeg bor i… " + fisk.habitat;
   document.getElementById("fishFact").textContent =
-    "Sjov fakta: " + fisk.funFact;
+    "Vidste du, at… " + fisk.funFact;
     
   // Vis boksen
   document.getElementById("fishInfo").hidden = false;
 
-// NY KODE: Frys fiskene
+//Frys fiskene
 document.body.classList.add("frys-fisk");
 
   // Afspil fiskens lyd

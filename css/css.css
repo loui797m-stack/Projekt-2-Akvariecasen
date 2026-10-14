@@ -210,27 +210,6 @@ html, body {
     cursor: pointer;
 }
 
-.map-container {
-    text-align: center;
-    color: white;
-    margin: 0;
-}
-
-#center-map {
-    max-width: 90vw; 
-    max-height: 80vh; 
-    border: 3px solid #70d9ff;
-    border-radius: 10px;
-    background-color: white; 
-}
-
-.map-container figcaption {
-    margin-top: 15px;
-    font-family: sans-serif;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
 #crab-1 {
     position: absolute;
     bottom: 1vw; 
