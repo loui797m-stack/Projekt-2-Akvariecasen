@@ -127,7 +127,7 @@ const fishData = [
     funFact:
       "Hammerhajens hoved hjælper den med at registrere byttedyr, der gemmer sig under sandet.",
     audioFile: "mp3/Havets_sejeste_ven.mp3"
-  }
+  },
 {
     id: "F009",
     name: "Kirurgfisk",

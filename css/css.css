@@ -201,6 +201,17 @@ html, body {
     height: auto;
 }
 
+/* Kirurgfisk (Oksana) */
+#kirurgfisk {
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    z-index: 100;
+    cursor: pointer;
+    animation: swim 30s linear infinite;
+    animation-delay: -15s;
+}
+
 /* Pincetfisk (Louise) - tegnet med snuden mod højre, derfor reverse */
 #pincetfisk {
     margin-top: 7vw;
@@ -227,19 +238,12 @@ html, body {
     height: auto;
 }
 
-/* Kirurgfisk (Oksana) */
-#kirurgfisk {
-    position: absolute;
-    top: 75%;
-    left: 0%;
-    z-index: 4;
-    animation: swim 30s linear infinite;
-    animation-delay: -15s;
-}
+
 
 #kirurgfisk img {
     width: 22vw;
     height: auto;
+    pointer-events: none;
 }
 
 /* Hammerhaj (Louise) */
