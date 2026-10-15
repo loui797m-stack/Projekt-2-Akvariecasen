@@ -50,6 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //Når vi klikker på en fisk, finder JavaScript fiskens ID, slår den op i vores data og viser dens oplysninger i boksen.
 function visFisk(event) {
+   if (lyd) {
+    lyd.pause();
+  }
   // Find fiskens ID
   const fiskId = event.currentTarget.dataset.fishId;
   //- event = det, der skete. I vores tilfælde et klik.
@@ -58,6 +61,7 @@ function visFisk(event) {
 
   // Find fisken i vores liste
   const fisk = fishData.find(fisk => fisk.id === fiskId);
+  //for hver fisk, tjek om dens id er lig med det, vi leder efter
 
   // Vis fiskens oplysninger
   document.getElementById("fishName").textContent = fisk.name;
