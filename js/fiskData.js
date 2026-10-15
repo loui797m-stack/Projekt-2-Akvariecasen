@@ -10,7 +10,7 @@ const fishData = [
       "Spidst næb"
     ],
     funFact:
-      "Hornfiskens skelet er grønt på grund af et naturligt farvestof.",
+      "Hornfisken har grønne knogler! Skulle du tegne dens skelet, skulle du altså finde den grønne farveblyant frem.",
     audioFile: "hornfisk.mp3"
   },
   {
@@ -29,7 +29,7 @@ const fishData = [
       "Gul bageste del"
     ],
     funFact:
-      "Den kan svømme med bugen vendt mod en lodret klippeflade eller ind i en sprække og bevæge sig i forskellige vinkler.",
+      "Konge-febarsen bygger rede, selvom den ikke er en fugl! Hannen indretter reden med alger og passer på æggene.",
     audioFile: "konge-febarskonge-febars.mp3"
   },
   {
@@ -45,7 +45,7 @@ const fishData = [
       "Næblignende mund"
     ],
     funFact:
-      "Nogle papegøjefisk danner en beskyttende slimkappe, når de hviler.",
+      "Nogle papegøjefisk laver sand med numsen! Koralstykker fra deres måltider bliver knust og kommer ud som fint sand.",
     audioFile: "Papegøjefisk.mp3"
   },
   {
@@ -58,7 +58,7 @@ const fishData = [
       "Krøllet hale"
     ],
     funFact:
-      "Det er hannen, der bærer æggene i en rugepose.",
+      "Hos søhestene er det far, der føder! Mor lægger æggene i hans rugepose, hvor ungerne udvikler sig.",
     audioFile: "Soehest.mp3"
   },
   {
@@ -74,7 +74,7 @@ const fishData = [
       "Smal snude"
     ],
     funFact:
-      "Snuden hjælper den med at finde føde i små sprækker.",
+      "Pincetfisken har et snydeøje. Den sorte plet nær halen ligner et øje, men den kan slet ikke se med det.",
     audioFile: "Pincetfisk.mp3"
   },
   {
@@ -90,7 +90,7 @@ const fishData = [
       "Kløer"
     ],
     funFact:
-      "Mange krabber går sidelæns, fordi deres ben og led er indrettet til det.",
+      "Mister krabben et ben, kan et nyt vokse frem med tiden.",
     audioFile: "Krabbe.mp3"
   },
   {
@@ -109,7 +109,7 @@ const fishData = [
       "Pigge"
     ],
     funFact:
-      "Pindsvinefisk kan puste sig op, så de virker større og sværere at sluge.",
+      "  Pindsvinefisk kan puste sig op, så de virker større og sværere at sluge.",
     audioFile: "Nutte.mp3"
   },
   {
