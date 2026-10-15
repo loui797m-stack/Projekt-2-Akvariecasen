@@ -157,17 +157,20 @@ html, body {
 /* Krabben står på knappens øverste højre kant */
 #dive-btn.jelly-dive .crab-icon {
   position: absolute;
-  top: auto;
   bottom: calc(100% - 35px);
   right: -35px;
-  left: auto;
   width: 200px;
+  max-width: 60vw;
   height: auto;
   margin: 0;
   transform: rotate(12deg);
-  z-index: 2;
+  z-index: 100;
   pointer-events: none;
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
+
 
 #water-area {
     flex: 1;

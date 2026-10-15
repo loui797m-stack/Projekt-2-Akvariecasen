@@ -61,7 +61,7 @@ const closeFishInfo = document.getElementById("closeFishInfo");
 // 3. FLASKEPOSTEN OG KORTET
 //    Klik på flaskeposten åbner et kort. Klik på kortet lukker det
 // ------------------------------------------------------------
-const flaskepostKnap = document.querySelector("message-bottle");
+const flaskepostKnap = document.querySelector("#message-bottle");
 const kortVindue = document.getElementById("map-overlay");
 
 // Vi gør kun noget, hvis begge dele findes
