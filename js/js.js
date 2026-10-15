@@ -4,6 +4,9 @@
 // Her gemmer vi den lyd, der spiller lige nu (så vi kan stoppe den igen)
 let lyd;
 
+// Her gemmer vi et "ur", der skifter nutten tilbage til normal efter 10 sekunder
+let nutteUr;
+
 
 // Infoboksen og luk-knappen findes i HTML. Vi henter dem én gang her
 const fishInfo = document.getElementById("fishInfo");
@@ -13,7 +16,7 @@ const closeFishInfo = document.getElementById("closeFishInfo");
 // 2. "DYK NED!"-KNAPPEN
 //    Knappen vipper som gelé og scroller ned til havbunden
 // ------------------------------------------------------------
-// kilde: 
+// kilde: https://l.facebook.com/l.php?u=https%3A%2F%2Fuiverse.io%2FFelip-r3y%2Fcowardly-dolphin-76%3Futm_source%3Dchatgpt.com%26fbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgVicmlkETB0RlVQNG1MdHIySThLOGVXc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlyKNHooFe9JAo7rvnQNqLyEa_KmDEZNCuQeWBEsYAhlttDUq4Ochmrqb4K9_aem_7SiJUyJ1qdgeeqnsZ44MaA&h=AUBg6vsdUg9sE2PABQH0fBEtz0FRdyDZTeNU5UUvsd5fIPRTHWwjLGumUMuhcRmSVEUYA_8Oi5-rZUl3kvTK0sST700xovcHtLozLsYDE-wyV2IenSOqjzL6in3WqVA
 (() => {
   const button = document.getElementById("dive-btn");
   if (!button) return;
@@ -58,27 +61,27 @@ const closeFishInfo = document.getElementById("closeFishInfo");
 // 3. FLASKEPOSTEN OG KORTET
 //    Klik på flaskeposten åbner et kort. Klik på kortet lukker det
 // ------------------------------------------------------------
-const flaskepostKnap = document.querySelector("#message-bottle");
-const mapOverlay = document.getElementById("map-overlay");
+const flaskepostKnap = document.querySelector("message-bottle");
+const kortVindue = document.getElementById("map-overlay");
 
-if (flaskepostKnap && mapOverlay) {
+// Vi gør kun noget, hvis begge dele findes
+if (flaskepostKnap && kortVindue) {
   // Åbn kortet semantisk korrekt
   flaskepostKnap.addEventListener("click", function() {
-      mapOverlay.showModal();
+      kortVindue.showModal();
   });
 
   // Luk kortet igen, uanset hvor man klikker på skærmen
-  mapOverlay.addEventListener("click", function() {
-      mapOverlay.close();
+ kortVindue.addEventListener("click", function () {
+    kortVindue.close();
   });
 }
 
-// Vent til HTML-siden er helt indlæst
-document.addEventListener('DOMContentLoaded', function() {
 
-// 4. NUTTEN (pindsvinefisken)
+// 4. NUTTE (pindsvinefisken)
 //    Når man klikker, puster den sig op i 10 sekunder
 // ------------------------------------------------------------
+    // Find nutte-knappen og nutte-billedet i HTML
     const knap = document.getElementById('louises_nutte');
     const billede = document.getElementById('nutte_img');
 
@@ -89,15 +92,16 @@ document.addEventListener('DOMContentLoaded', function() {
           // Skift straks til nutte 2 (animationen fortsætter uforstyrret)
           billede.src = 'svg/louises_nutte2.svg';
 
-          // Vent 10 sekunder og skift tilbage til nutte 1
-          setTimeout(function(){
-              billede.src = 'svg/louises_nutte1.svg';
-          }, 10000);
+        // Hvis uret allerede kører, så nulstil det
+        // (ellers skifter nutten tilbage for tidligt, hvis man klikker to gange)
+        clearTimeout(nutteUr);
 
-      });
-    }
-
-});
+    // Efter 10 sekunder (10000 millisekunder) skifter vi tilbage til den normale nutte
+    nutteUr = setTimeout(function () {
+      nutteBillede.src = "svg/louises_nutte1.svg";
+    }, 10000);
+  });
+}
 
 // 5. VIS FISKENS OPLYSNINGER
 //    Når man trykker på en fisk, sker det her:
@@ -107,51 +111,58 @@ document.addEventListener('DOMContentLoaded', function() {
 //    4) Vi skriver oplysningerne i infoboksen og viser den
 //    5) Fiskene holder pause, og fiskens lyd afspilles
 // ------------------------------------------------------------
-function visFisk(event) {
-  // 1) Stop lyden fra den forrige fisk
-   if (lyd) {
+function visFisk(klikHaendelse) {
+
+  // 1) Hvis en lyd spiller, så stop den
+  if (lyd) {
     lyd.pause();
   }
- // 2) Hvilken fisk blev trykket på? Det står i HTML som data-fish-id
-  const fiskId = event?.currentTarget?.dataset?.fishId;
-  if (!fiskId) {
-    return;
-  }
 
-  // 3) Find fisken i listen fishData (ligger i fiskData.js)
-  const fisk = fishData.find(fisk => fisk.id === fiskId);
+  // 2) Hvilken knap blev der trykket på?
+  const trykketKnap = klikHaendelse.currentTarget;
+
+  // Hvilket nummer har fisken? Det står i HTML som data-fish-id (fx "F008")
+  const fiskId = trykketKnap.dataset.fishId;
+
+  // 3) Find fisken i listen "fishData" (den ligger i fiskData.js)
+  //    find() kigger på én fisk ad gangen og stopper, når id'et passer
+  const valgtFisk = fishData.find(function (enkeltFisk) {
+    return enkeltFisk.id === fiskId;
+  });
 
   // Hvis fisken ikke findes i listen, gør vi ikke mere
-  if (!fisk) {
+  if (!valgtFisk) {
     return;
   }
 
   // 4) Skriv fiskens oplysninger ind i infoboksen
-  const fishName = document.getElementById("fishName");
-  const fishHabitat = document.getElementById("fishHabitat");
-  const fishFact = document.getElementById("fishFact");
-  const fishInfo = document.getElementById("fishInfo");
+  const fiskNavn = document.getElementById("fishName");
+  const fiskLevested = document.getElementById("fishHabitat");
+  const fiskSjovtFaktum = document.getElementById("fishFact");
 
-  if (fishName) fishName.textContent = fisk.name;
-  if (fishHabitat) fishHabitat.textContent = "Jeg bor i… " + fisk.habitat;
-  if (fishFact) fishFact.textContent = "Vidste du, at… " + fisk.funFact;
+  fiskNavn.textContent = valgtFisk.name;
+  fiskLevested.textContent = "Jeg bor i… " + valgtFisk.habitat;
+  fiskSjovtFaktum.textContent = "Vidste du, at… " + valgtFisk.funFact;
 
-  document.querySelector(".valgt-fisk")?.classList.remove("valgt-fisk");
+  // Fjern markeringen fra den fisk, der var valgt før
+  const forrigeValgteFisk = document.querySelector(".valgt-fisk");
 
-  // Marker den valgte fisk (fjern først markeringen fra den forrige)
-
-  if (event.currentTarget) {
-    event.currentTarget.classList.add("valgt-fisk");
+  if (forrigeValgteFisk) {
+    forrigeValgteFisk.classList.remove("valgt-fisk");
   }
-  // Vis infoboksen
 
-  if (fishInfo) fishInfo.hidden = false;
+  // Marker den fisk, der lige er trykket på
+  trykketKnap.classList.add("valgt-fisk");
 
-  // 5) Få alle fisk til at holde pause (CSS gør selve arbejdet)
+  // Vis infoboksen (den er skjult fra start)
+  fishInfo.hidden = false;
+
+  // 5) Få alle fisk til at holde pause
+  //    JavaScript sætter bare en klasse på body. CSS'en gør selve arbejdet
   document.body.classList.add("frys-fisk");
 
   // Afspil fiskens lyd
-  lyd = new Audio(fisk.audioFile);
+  lyd = new Audio(valgtFisk.audioFile);
   lyd.play();
 }
 
