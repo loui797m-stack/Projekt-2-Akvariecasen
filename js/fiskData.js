@@ -46,7 +46,7 @@ const fishData = [
     ],
     funFact:
       "Nogle papegøjefisk danner en beskyttende slimkappe, når de hviler.",
-    audioFile: "Papegøjefisk.mp3"
+    audioFile: "mp3/papegøjefisk.mp3"
   },
   {
     id: "F004",
