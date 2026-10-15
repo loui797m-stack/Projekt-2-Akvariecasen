@@ -11,7 +11,7 @@ const fishData = [
     ],
     funFact:
       "Hornfiskens skelet er grønt på grund af et naturligt farvestof.",
-    audioFile: "hornfisk.mp3"
+    audioFile: "mp3/Den_Med_De_Grønne_Ben.mp3"
   },
   {
     id: "F002",
@@ -30,7 +30,7 @@ const fishData = [
     ],
     funFact:
       "Konge-febarsen bygger rede, selvom den ikke er en fugl! Hannen indretter reden med alger og passer på æggene.",
-    audioFile: "konge-febarskonge-febars.mp3"
+    audioFile: "mp3/Lilla_foran_og_gul_bagtil.mp3"
   },
   {
     id: "F003",
@@ -46,7 +46,7 @@ const fishData = [
     ],
     funFact:
       "Nogle papegøjefisk danner en beskyttende slimkappe, når de hviler.",
-    audioFile: "papegøjefisk.mp3"
+    audioFile: "mp3/papegøjefisk.mp3"
   },
   {
     id: "F004",
@@ -59,7 +59,7 @@ const fishData = [
     ],
     funFact:
       "Hos søhestene er det far, der føder! Mor lægger æggene i hans rugepose, hvor ungerne udvikler sig.",
-    audioFile: "Soehest.mp3"
+    audioFile: "mp3/Faderens_Slot.mp3"
   },
   {
     id: "F005",
@@ -75,7 +75,7 @@ const fishData = [
     ],
     funFact:
       "Pincetfisken har et snydeøje. Den sorte plet nær halen ligner et øje, men den kan slet ikke se med det.",
-    audioFile: "Pincetfisk.mp3"
+    audioFile: "mp3/Pænt_nederen_at_være_mig.mp3"
   },
   {
     id: "F006",
@@ -91,7 +91,7 @@ const fishData = [
     ],
     funFact:
       "Mange krabber går sidelæns, fordi deres ben og led er indrettet til det.",
-    audioFile: "Krabbe.mp3"
+    audioFile: "mp3/Krabben_går_sidelæns.mp3"
   },
   {
     id: "F007",
