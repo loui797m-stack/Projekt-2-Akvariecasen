@@ -422,13 +422,28 @@ html, body {
   filter: brightness(0) invert(1);
 }
 
+/* Luk-knappen øverst til højre i faktaboksen */
 #closeFishInfo {
-  float: right;
-  background: none;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  background: transparent;
   border: none;
-  color: white;
-  font-size: 24px;
   cursor: pointer;
+}
+
+/* Det orange kryds inde i knappen */
+#closeFishInfo img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  pointer-events: none;
 }
 
 .fish-info[hidden] {
