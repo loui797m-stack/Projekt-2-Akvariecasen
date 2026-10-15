@@ -78,10 +78,10 @@ Løsningen tager udgangspunkt i Storcenter Nords style tile: logo, farver og typ
 
 **Links**
 
-- [Se den færdige løsning (GitHub Pages)](indsæt-link-her)
-- [Se github reposetory (GitHub Pages)](indsæt-link-her)
-- [Se Figma-filen](https://www.figma.com/design/NuM6LB1B0xLlm6kVyUTPF6/Projekt-2--Akvariecasen---design?node-id=0-1&t=9eDwowfvG1hNSZAV-1)
-- [Se vores pitch-slides](indsæt-link-her)
+- [Se den færdige løsning (GitHub Pages)](https://loui797m-stack.github.io/Projekt-2-Akvariecasen/)
+- [Se github reposetory (GitHub Pages)](https://github.com/loui797m-stack/Projekt-2-Akvariecasen.git)
+- [Se Figma-filen](https://www.figma.com/design/NuM6LB1B0xLlm6kVyUTPF6/Projekt-2--Akvariecasen---design?node-id=0-1&t=2TFTbqRiTh0XJ4OC-1)
+- [Se vores pitch-slides](https://www.figma.com/deck/bBrUbancnNgPeA6CuWrLi2)
 
 ## Kendte begrænsninger og videre arbejde
 
