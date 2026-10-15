@@ -110,7 +110,7 @@ const fishData = [
     ],
     funFact:
       "  Pindsvinefisk kan puste sig op, så de virker større og sværere at sluge.",
-    audioFile: "Nutte.mp3"
+    audioFile: "svg/Nutte_puster_sig_op.mp3"
   },
   {
     id: "F008",
