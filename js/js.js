@@ -46,15 +46,17 @@ let lyd;
 const flaskepostKnap = document.querySelector("#message-bottle");
 const mapOverlay = document.getElementById("map-overlay");
 
-// Åbn kortet semantisk korrekt
-flaskepostKnap.addEventListener("click", function() {
-    mapOverlay.showModal(); 
-});
+if (flaskepostKnap && mapOverlay) {
+  // Åbn kortet semantisk korrekt
+  flaskepostKnap.addEventListener("click", function() {
+      mapOverlay.showModal();
+  });
 
-// Luk kortet igen, uanset hvor man klikker på skærmen
-mapOverlay.addEventListener("click", function() {
-    mapOverlay.close(); 
-});
+  // Luk kortet igen, uanset hvor man klikker på skærmen
+  mapOverlay.addEventListener("click", function() {
+      mapOverlay.close();
+  });
+}
 
 // Vent til HTML-siden er helt indlæst
 document.addEventListener('DOMContentLoaded', function() {
@@ -63,18 +65,20 @@ document.addEventListener('DOMContentLoaded', function() {
     const knap = document.getElementById('louises_nutte');
     const billede = document.getElementById('nutte_img');
 
-    // 2. Lyt efter klik på knappen
-    knap.addEventListener('click', function(){
+    if (knap && billede) {
+      // 2. Lyt efter klik på knappen
+      knap.addEventListener('click', function(){
 
-        // Skift straks til nutte 2 (animationen fortsætter uforstyrret)
-        billede.src = 'svg/louises_nutte2.svg';
+          // Skift straks til nutte 2 (animationen fortsætter uforstyrret)
+          billede.src = 'svg/louises_nutte2.svg';
 
-        // Vent 10 sekunder og skift tilbage til nutte 1
-        setTimeout(function(){
-            billede.src = 'svg/louises_nutte1.svg';
-        }, 10000);
+          // Vent 10 sekunder og skift tilbage til nutte 1
+          setTimeout(function(){
+              billede.src = 'svg/louises_nutte1.svg';
+          }, 10000);
 
-    });
+      });
+    }
 
 });
 
@@ -83,66 +87,69 @@ function visFisk(event) {
    if (lyd) {
     lyd.pause();
   }
-  // Find fiskens ID
-  const fiskId = event.currentTarget.dataset.fishId;
-  //- event = det, der skete. I vores tilfælde et klik.
-  //- currentTarget = knappen, som vi har sat klikfunktionen på.
-  // dataset.fishId = henter fiskens ID fra HTML-attributten data-fish-id.
 
-  // Find fisken i vores liste
+  const fiskId = event?.currentTarget?.dataset?.fishId;
+  if (!fiskId) {
+    return;
+  }
+
   const fisk = fishData.find(fisk => fisk.id === fiskId);
-  //for hver fisk, tjek om dens id er lig med det, vi leder efter
+  if (!fisk) {
+    return;
+  }
 
-  // Vis fiskens oplysninger
-  document.getElementById("fishName").textContent = fisk.name;
-  document.getElementById("fishHabitat").textContent =
-    "Jeg bor i… " + fisk.habitat;
-  document.getElementById("fishFact").textContent =
-    "Vidste du, at… " + fisk.funFact;
-    
-  // Vis boksen
-  document.getElementById("fishInfo").hidden = false;
+  const fishName = document.getElementById("fishName");
+  const fishHabitat = document.getElementById("fishHabitat");
+  const fishFact = document.getElementById("fishFact");
+  const fishInfo = document.getElementById("fishInfo");
 
-//Frys fiskene
-document.body.classList.add("frys-fisk");
+  if (fishName) fishName.textContent = fisk.name;
+  if (fishHabitat) fishHabitat.textContent = "Jeg bor i… " + fisk.habitat;
+  if (fishFact) fishFact.textContent = "Vidste du, at… " + fisk.funFact;
 
-  // Afspil fiskens lyd
-lyd = new Audio(fisk.audioFile);
-lyd.play();
+  document.querySelector(".valgt-fisk")?.classList.remove("valgt-fisk");
+
+  if (event.currentTarget) {
+    event.currentTarget.classList.add("valgt-fisk");
+  }
+
+  if (fishInfo) fishInfo.hidden = false;
+  document.body.classList.add("frys-fisk");
+
+  lyd = new Audio(fisk.audioFile);
+  lyd.play();
 }
 
+const fishButtons = [
+  "hornfisk",
+  "konge-febars",
+  "papegoejefisk",
+  "soehest",
+  "pincetfisk",
+  "crab-1",
+  "louises_nutte",
+  "hammerhaj"
+];
 
-// Gør hornfisken klikbar
-document.getElementById("hornfisk").addEventListener("click", visFisk);
-
-// Gør konge-febars klikbar
-document.getElementById("konge-febars").addEventListener("click", visFisk);
-
-// Gør papegøjefisken klikbar
-document.getElementById("papegoejefisk").addEventListener("click", visFisk);
-
-// Gør søhesten klikbar
-document.getElementById("soehest").addEventListener("click", visFisk);
-
-// Gør pincetfisken klikbar
-document.getElementById("pincetfisk").addEventListener("click", visFisk);
-
-// Gør krabben klikbar
-document.getElementById("crab-1").addEventListener("click", visFisk);
-
-// Gør nutten klikbar
-document.getElementById("louises_nutte").addEventListener("click", visFisk);
-
-// Gør hammerhajen klikbar
-document.getElementById("hammerhaj").addEventListener("click", visFisk);
-
-// Luk boksen og stop musikken
-document.getElementById("closeFishInfo").addEventListener("click", function() {
-  document.getElementById("fishInfo").hidden = true;
-document.body.classList.remove("frys-fisk");
-
- if (lyd) {
-    lyd.pause();
-    lyd.currentTime = 0;
+fishButtons.forEach((id) => {
+  const button = document.getElementById(id);
+  if (button) {
+    button.addEventListener("click", visFisk);
   }
 });
+
+const closeFishInfo = document.getElementById("closeFishInfo");
+const fishInfo = document.getElementById("fishInfo");
+
+if (closeFishInfo) {
+  closeFishInfo.addEventListener("click", function() {
+    if (fishInfo) fishInfo.hidden = true;
+    document.body.classList.remove("frys-fisk");
+    document.querySelector(".valgt-fisk")?.classList.remove("valgt-fisk");
+
+    if (lyd) {
+      lyd.pause();
+      lyd.currentTime = 0;
+    }
+  });
+}
