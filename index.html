@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akvarie</title>
+
     <link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;1,800&display=swap"
-  />
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;1,800&display=swap"
+    />
     <link rel="stylesheet" href="css/css.css" />
   </head>
   <body>
     <main class="aquarium">
       <img
-      id="center-logo"
-      src="svg/STORCENTER_NORD-removebg-preview.png"
-      alt="Storcenter Nord"
-/>
+        id="center-logo"
+        src="svg/STORCENTER_NORD-removebg-preview.png"
+        alt="Storcenter Nord"
+      />
       <!-- LAG 1: Baggrundsvandet (Styrer hele sidens højde, så scroll virker perfekt) -->
       <img
         src="css/Baggrund.svg"
@@ -27,20 +28,15 @@
       <!-- LAG 2: Det interaktive lag (Fisk, flaskepost og tekst) -->
       <div id="interactive-layer">
         <!-- Tekstområde i toppen -->
-        z<header id="intro-header">
+        z
+        <header id="intro-header">
           <h1>Dyk ned og syng med fiskene!</h1>
-  <p>
-    Tryk på knappen og tag med på et musikalsk undervandseventyr!
-  </p>
-   <button id="dive-btn" class="jelly-dive" type="button">
-     <img  
-     src="svg/louises_krabbe.svg"
-      class="crab-icon"
-      alt=""
-    />
-    <span>DYK NED!</span>
-  </button>
-</header>
+          <p>Tryk på knappen og tag med på et musikalsk undervandseventyr!</p>
+          <button id="dive-btn" class="jelly-dive" type="button">
+            <img src="svg/louises_krabbe.svg" class="crab-icon" alt="" />
+            <span>DYK NED!</span>
+          </button>
+        </header>
         <!-- Selve det store vandområde, hvor fiskene svømmer -->
         <section id="water-area">
           <!-- F001 Hornfisk (Klaudia) -->
@@ -70,7 +66,6 @@
             <!-- TJEK filnavn -->
           </button>
 
-      
           <!-- F007 Nutte / pindsvinefisk (Louise) -->
           <button data-fish-id="F007" id="louises_nutte" class="clean-btn">
             <img

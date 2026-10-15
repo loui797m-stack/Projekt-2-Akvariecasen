@@ -11,7 +11,7 @@ const fishData = [
     ],
     funFact:
       "Hornfiskens skelet er grønt på grund af et naturligt farvestof.",
-    audioFile: "hornfisk.mp3"
+    audioFile: "mp3/Den_Med_De_Grønne_Ben.mp3"
   },
   {
     id: "F002",
@@ -91,7 +91,7 @@ const fishData = [
     ],
     funFact:
       "Mange krabber går sidelæns, fordi deres ben og led er indrettet til det.",
-    audioFile: "Krabbe.mp3"
+    audioFile: "mp3/Krabben_går_sidelæns.mp3"
   },
   {
     id: "F007",
