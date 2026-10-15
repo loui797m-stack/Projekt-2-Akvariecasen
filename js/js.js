@@ -1,16 +1,46 @@
 let lyd;
 
 // Find "DYK NED" knappen
-const diveBtn = document.getElementById("dive-btn");
+(() => {
+  const button = document.getElementById("dive-btn");
+  if (!button) return;
 
-if (diveBtn) {
-    diveBtn.addEventListener("click", function() {
-        window.scrollTo({
-            top: document.body.scrollHeight,
-            behavior: "smooth"
-        });
+  let wobble;
+
+  function playJelly() {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    wobble?.cancel();
+
+    wobble = button.animate(
+      [
+        { scale: "1 1", offset: 0 },
+        { scale: "1.25 0.75", offset: 0.3 },
+        { scale: "0.75 1.25", offset: 0.4 },
+        { scale: "1.15 0.85", offset: 0.5 },
+        { scale: "0.95 1.05", offset: 0.65 },
+        { scale: "1.05 0.95", offset: 0.75 },
+        { scale: "1 1", offset: 1 }
+      ],
+      { duration: 900, easing: "linear" }
+    );
+  }
+
+  // Click or tap: wobble and scroll to the BOTTOM
+  button.addEventListener("click", () => {
+    playJelly();
+
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth"
     });
-}
+  });
+
+  // Mouse hover: wobble
+  button.addEventListener("pointerenter", (event) => {
+    if (event.pointerType === "mouse") playJelly();
+  });
+})();
 
 // Find flaskeposten og dialog-overlayet
 const flaskepostKnap = document.querySelector("#message-bottle");
