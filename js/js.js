@@ -14,7 +14,7 @@ const closeFishInfo = document.getElementById("closeFishInfo");
 // 2. "DYK NED!"-KNAPPEN
 //    Knappen vipper som gelé og scroller ned til havbunden
 // ------------------------------------------------------------
-// kilde: https://l.facebook.com/l.php?u=https%3A%2F%2Fuiverse.io%2FFelip-r3y%2Fcowardly-dolphin-76%3Futm_source%3Dchatgpt.com%26fbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgVicmlkETB0RlVQNG1MdHIySThLOGVXc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHlyKNHooFe9JAo7rvnQNqLyEa_KmDEZNCuQeWBEsYAhlttDUq4Ochmrqb4K9_aem_7SiJUyJ1qdgeeqnsZ44MaA&h=AUBg6vsdUg9sE2PABQH0fBEtz0FRdyDZTeNU5UUvsd5fIPRTHWwjLGumUMuhcRmSVEUYA_8Oi5-rZUl3kvTK0sST700xovcHtLozLsYDE-wyV2IenSOqjzL6in3WqVA
+// kilde: https://uiverse.io/Felip-r3y/cowardly-dolphin-76?utm_source=chatgpt.com&fbclid=IwZXh0bgNhZW0CMTAAcGRvZgFzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeKTHt120IsKtzP-XX2VQdljyVaS8UTXKCqKbne9Nhmo5ojCBM569Q19iNt0M_aem_Sq6mQC93NTHjye4J4hqRDw
 (() => {
   const button = document.getElementById("dive-btn");
   if (!button) return;

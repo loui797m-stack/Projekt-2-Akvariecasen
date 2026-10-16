@@ -26,6 +26,8 @@ body {
 
 .aquarium {
   width: 100%;
+  max-width: 2400px;
+  margin: 0 auto;
   position: relative;
   overflow: hidden;
 }
@@ -157,7 +159,7 @@ body {
   border: none;
   border-radius: 999px;
   background: var(--knap-roed);
-  color: #000;
+  color: var(--tekst-sort);
   overflow: visible;
 
   font-family: "Barlow", sans-serif;
@@ -389,7 +391,7 @@ body {
 
 #bobler_1 {
   position: absolute;
-  bottom: 420px;
+  bottom: 22vw;
   left: 10%;
   width: 20vw;
   height: auto;
@@ -400,7 +402,7 @@ body {
 
 #bobler_2 {
   position: absolute;
-  bottom: 200px;
+  bottom: 10vw;
   left: 40%;
   width: 15vw;
   height: auto;
@@ -506,7 +508,7 @@ body.frys-fisk::after {
 
 #interactive-layer .valgt-fisk img {
   filter:
-    drop-shadow(0 0 4px white)
+    drop-shadow(0 0 4px var(--tekst-hvid))
     drop-shadow(0 0 18px var(--fiskeboks-kant));
 }
 
