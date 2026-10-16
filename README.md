@@ -74,7 +74,7 @@ Løsningen tager udgangspunkt i Storcenter Nords style tile: logo, farver og typ
 
 - Storcenter Nords hjemmeside og udleverede style tile
 - Interviews med tre forældre og egne observationer ved akvariet
-- Kristensen, I. S. (2020). “Sang og kommunikation i vuggestuen. Om sangaktiviteters kommunikative potentiale for vuggestuebørn.” Viden om Literacy, nr. 28, Nationalt Videncenter for Læsning. Den står på side 42https://www.videnomlaesning.dk/media/3623/28.pdf
+- Kristensen, I. S. (2020). “Sang og kommunikation i vuggestuen. Om sangaktiviteters kommunikative potentiale for vuggestuebørn.” Viden om Literacy, nr. 28, Nationalt Videncenter for Læsning. Den står på side 42. https://www.videnomlaesning.dk/media/3623/28.pdf
 
 **Links**
 
