@@ -95,7 +95,7 @@ if (flaskepostKnap && kortVindue) {
 
     // Efter 10 sekunder (10000 millisekunder) skifter vi tilbage til den normale nutte
     nutteUr = setTimeout(function () {
-nutteBillede.src = "svg/louises_nutte1.svg";
+         billede.src = "svg/louises_nutte1.svg";
     }, 10000);
   });
 }
