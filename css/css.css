@@ -157,7 +157,7 @@ body {
   border: none;
   border-radius: 999px;
   background: var(--knap-roed);
-  color: #000;
+  color: var(--tekst-sort);
   overflow: visible;
 
   font-family: "Barlow", sans-serif;
@@ -506,7 +506,7 @@ body.frys-fisk::after {
 
 #interactive-layer .valgt-fisk img {
   filter:
-    drop-shadow(0 0 4px white)
+    drop-shadow(0 0 4px var(--tekst-hvid))
     drop-shadow(0 0 18px var(--fiskeboks-kant));
 }
 
