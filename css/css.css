@@ -1,3 +1,15 @@
+
+:root {
+  --hav-blaa: #0089d0;
+  --overskrift-blaa: #1a428a;
+  --tekst-sort: #000000;
+  --knap-roed: #ff003c;
+  --knap-roed-lys: #ff527b;
+  --knap-roed-moerk: #d80033;
+  --fiskeboks-bg: #003b60;
+  --fiskeboks-kant: #70d9ff;
+  --tekst-hvid: #ffffff;
+}
 /* GENERELT */
 * {
   margin: 0;
@@ -9,7 +21,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  background-color: #0089d0;
+  background-color: var(--hav-blaa);
 }
 
 .aquarium {
@@ -144,7 +156,7 @@ body {
 
   border: none;
   border-radius: 999px;
-  background: #ff003c;
+  background: var(--knap-roed);
   color: #000;
   overflow: visible;
 
@@ -155,8 +167,8 @@ body {
   text-shadow: 0 2px 3px rgb(0 0 0 / 25%);
 
   box-shadow:
-    inset 0 10px 14px #ff527b,
-    inset 0 -10px 14px #d80033,
+    inset 0 10px 14px var(--knap-roed-lys),
+    inset 0 -10px 14px var(--knap-roed-moerk),
     0 7px 14px rgb(15 45 100 / 25%);
 
   cursor: pointer;
@@ -408,14 +420,14 @@ body {
   width: 80%;
   max-width: 350px;
   padding: 20px;
-  background: #003b60;
+  background: var(--fiskeboks-bg);
   color: white;
-  border: 2px solid #70d9ff;
+  border: 2px solid var(--fiskeboks-kant);
   border-radius: 15px;
 }
 
 .fish-info h2 {
-  color: #70d9ff;
+  color: var(--fiskeboks-kant);
   margin-bottom: 10px;
   padding-right: 44px;
 }
@@ -495,7 +507,7 @@ body.frys-fisk::after {
 #interactive-layer .valgt-fisk img {
   filter:
     drop-shadow(0 0 4px white)
-    drop-shadow(0 0 18px #70d9ff);
+    drop-shadow(0 0 18px var(--fiskeboks-kant));
 }
 
 /* ANIMATIONER */
