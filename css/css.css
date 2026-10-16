@@ -389,7 +389,7 @@ body {
 
 #bobler_1 {
   position: absolute;
-  bottom: 420px;
+  bottom: 22vw;
   left: 10%;
   width: 20vw;
   height: auto;
@@ -400,7 +400,7 @@ body {
 
 #bobler_2 {
   position: absolute;
-  bottom: 200px;
+  bottom: 10vw;
   left: 40%;
   width: 15vw;
   height: auto;
