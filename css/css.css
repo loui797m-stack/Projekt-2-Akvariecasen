@@ -11,14 +11,18 @@ body {
   overflow-x: hidden;
   background-color: #0089d0;
 }
+}
 
+.aquarium {
 .aquarium {
   width: 100%;
   position: relative;
   overflow: hidden;
 }
+}
 
 /* BAGGRUND OG LAG */
+.layer {
 .layer {
   width: 100%;
   display: block;
@@ -32,6 +36,35 @@ body {
   margin-right: 0;
   height: auto;
   z-index: 1;
+}
+
+.second-layer {
+  position: absolute;
+  top: 71vw;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+.third-layer {
+  position: absolute;
+  top: 67vw;
+  left: 0;
+  width: 110%;
+  height: 100%;
+  z-index: 3;
+}
+
+.front-layer {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 5;
+  pointer-events: none;
 }
 
 .second-layer {
@@ -75,6 +108,357 @@ body {
 }
 
 /* LILLE LOGO ØVERST TIL HØJRE */
+/* Lysrefleks på knappen */
+#dive-btn.jelly-dive::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 20%;
+  width: 60%;
+  height: 3px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 65%);
+  filter: blur(1px);
+  pointer-events: none;
+}
+
+/* Krabben står på knappens øverste højre kant */
+#dive-btn.jelly-dive .crab-icon {
+  position: absolute;
+  bottom: calc(100% - 35px);
+  right: -35px;
+  width: 200px;
+  max-width: 60vw;
+  height: auto;
+  margin: 0;
+  transform: rotate(12deg);
+  z-index: 100;
+  pointer-events: none;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+#water-area {
+  flex: 1;
+  padding: 2rem;
+  position: relative;
+}
+
+#seabed {
+  position: relative;
+  height: 1vw;
+  width: 100%;
+}
+
+/* Hornfisk (Klaudia) */
+#hornfisk {
+  margin-top: -14vw;
+  animation: swim 28s linear infinite;
+  animation-delay: -5s;
+  content-visibility: auto;
+}
+#hornfisk img {
+  width: 25vw;
+  height: auto;
+}
+
+/* Konge-febars (Klaudia) */
+#konge-febars {
+  margin-top: -7vw;
+  animation: swim_soehest 26s ease-in-out infinite;
+  animation-delay: -12s;
+  content-visibility: auto;
+}
+#konge-febars img {
+  width: 18vw;
+  height: auto;
+}
+
+/* Papegøjefisk (Oksana) */
+#papegoejefisk {
+  margin-top: 0vw;
+  animation: swim_soehest 32s ease-in-out infinite;
+  animation-delay: -20s;
+  content-visibility: auto;
+}
+#papegoejefisk img {
+  width: 22vw;
+  height: auto;
+}
+
+/* Pincetfisk (Louise) - tegnet med snuden mod højre, derfor reverse */
+#pincetfisk {
+  margin-top: 7vw;
+  animation: swim 24s linear infinite;
+  animation-delay: -8s;
+  animation-direction: reverse;
+  content-visibility: auto;
+}
+#pincetfisk img {
+  width: 14vw;
+  height: auto;
+}
+
+/* Søhest (Louise) */
+#soehest {
+  position: absolute;
+  top: 75%;
+  left: 0%;
+  z-index: 10;
+  animation: swim_soehest 22s ease-in-out infinite;
+  animation-delay: -3s;
+  content-visibility: auto;
+}
+#soehest img {
+  width: 20vw;
+  height: auto;
+}
+
+/* Hammerhaj (Louise) */
+#hammerhaj {
+  position: absolute;
+  top: 75%;
+  left: 0%;
+  z-index: 11;
+  animation: swim 20s linear infinite;
+  content-visibility: auto;
+}
+#hammerhaj img {
+  width: 60vw;
+  height: auto;
+}
+
+#message-bottle {
+  position: absolute;
+  bottom: 7vw;
+  left: 35%;
+  z-index: 1000;
+  transform-origin: bottom center;
+  animation: float 4s ease-in-out infinite;
+}
+
+#message-bottle img {
+  width: 12vw;
+  height: auto;
+}
+/* --- KORT OVERLAY --- */
+#map-overlay {
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  margin: auto;
+}
+
+/* Den indbyggede mørke baggrund */
+#map-overlay::backdrop {
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+}
+
+#crab-1 {
+  position: absolute;
+  bottom: 1vw;
+  left: 2%;
+  z-index: 1000;
+}
+
+#crab-1 img {
+  width: 25vw;
+  height: auto;
+}
+#louises_nutte {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  z-index: 10;
+  animation: swim_soehest 30s ease-in-out infinite;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  content-visibility: auto;
+}
+#louises_nutte img {
+  width: 20vw;
+  height: auto;
+}
+
+#bobler_1{
+  bottom: 420px;
+  left: 10%;
+  width: 20vw;
+  height: auto;
+  z-index: 10;
+  position: absolute;
+  transform-origin: bottom center;
+  animation: float 4s ease-in-out infinite;
+
+}
+
+#bobler_2{
+  bottom: 200px;
+  left: 40%;
+  z-index: 1000;
+  width: 15vw;
+  height: auto;
+  position: absolute;
+  transform-origin: bottom center;
+  animation: float 4s ease-in-out infinite;
+
+}
+
+/* --- ANIMATIONER --- */
+
+@keyframes float {
+  0% { transform: rotate(0deg) translateY(0px); }
+  50% { transform: rotate(4deg) translateY(-5px); }
+  100% { transform: rotate(0deg) translateY(0px); }
+}
+
+@keyframes swim {
+  0% { transform: translateX(-110vw) scaleX(-1); }
+  49% { transform: translateX(110vw) scaleX(-1); }
+  50% { transform: translateX(110vw) scaleX(1); }
+  99% { transform: translateX(-110vw) scaleX(1); }
+  100% { transform: translateX(-110vw) scaleX(-1); }
+}
+
+@keyframes swim_soehest {
+  /* --- SVØMMER MOD HØJRE (kigger mod venstre i scaleX(-1)) --- */
+  0%   { transform: translateX(-110vw) translateY(0px) scaleX(-1) rotate(0deg); }
+  6.25%  { transform: translateX(-82.5vw) translateY(-40px) scaleX(-1) rotate(-6deg); }
+  12.5%  { transform: translateX(-55vw) translateY(0px) scaleX(-1) rotate(0deg); }
+  18.75% { transform: translateX(-27.5vw) translateY(-40px) scaleX(-1) rotate(-6deg); }
+  25%    { transform: translateX(0vw) translateY(0px) scaleX(-1) rotate(0deg); }
+  31.25% { transform: translateX(27.5vw) translateY(-40px) scaleX(-1) rotate(-6deg); }
+  37.5%  { transform: translateX(55vw) translateY(0px) scaleX(-1) rotate(0deg); }
+  43.75% { transform: translateX(82.5vw) translateY(-40px) scaleX(-1) rotate(-6deg); }
+  49%    { transform: translateX(110vw) translateY(0px) scaleX(-1) rotate(0deg); }
+
+  /* --- VENDER OM UDE FOR SKÆRMEN --- */
+  50%  { transform: translateX(110vw) translateY(0px) scaleX(1) rotate(0deg); }
+
+  /* --- SVØMMER MOD VENSTRE (kigger mod højre i scaleX(1)) --- */
+  56.25% { transform: translateX(82.5vw) translateY(-40px) scaleX(1) rotate(6deg); }
+  62.5%  { transform: translateX(55vw) translateY(0px) scaleX(1) rotate(0deg); }
+  68.75% { transform: translateX(27.5vw) translateY(-40px) scaleX(1) rotate(6deg); }
+  75%    { transform: translateX(0vw) translateY(0px) scaleX(1) rotate(0deg); }
+  81.25% { transform: translateX(-27.5vw) translateY(-40px) scaleX(1) rotate(6deg); }
+  87.5%  { transform: translateX(-55vw) translateY(0px) scaleX(1) rotate(0deg); }
+  93.75% { transform: translateX(-82.5vw) translateY(-40px) scaleX(1) rotate(6deg); }
+  99%    { transform: translateX(-110vw) translateY(0px) scaleX(1) rotate(0deg); }
+  100%   { transform: translateX(-110vw) translateY(0px) scaleX(-1) rotate(0deg); }
+}
+
+.fish-info {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2002;
+  width: 80%;
+  max-width: 350px;
+  padding: 20px;
+  background: #003b60;
+  color: white;
+  border: 2px solid #70d9ff;
+  border-radius: 15px;
+}
+
+.fish-info h2 {
+  color: #70d9ff;
+  margin-bottom: 10px;
+}
+
+.fish-info p {
+  margin: 10px 0;
+}
+
+.fish-info-logo {
+  display: block;
+  width: 85px;
+  max-width: 100%;
+  height: auto;
+  margin: 16px auto 0;
+  filter: brightness(0) invert(1);
+}
+
+#closeFishInfo {
+  float: right;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.fish-info[hidden] {
+  display: none;
+}
+
+/* --- PAUSE ANIMATIONER --- */
+body.frys-fisk #hornfisk,
+body.frys-fisk #konge-febars,
+body.frys-fisk #papegoejefisk,
+body.frys-fisk #pincetfisk,
+body.frys-fisk #soehest,
+body.frys-fisk #hammerhaj,
+body.frys-fisk #louises_nutte,
+body.frys-fisk #crab-1 {
+  animation-play-state: paused;
+}
+
+#hammerhaj, #soehest, #louises_nutte, #message-bottle, #bobler_1, #bobler_2 {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+/* Dæmp akvariet, mens en fisk fortæller */
+body.frys-fisk::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgb(0 24 48 / 50%);
+  z-index: 2000;
+  pointer-events: none;
+}
+
+/* Løft den valgte fisk foran dæmpningen og korallerne */
+#interactive-layer .valgt-fisk {
+  z-index: 2001;
+  content-visibility: visible;
+}
+
+/* Blødt lys, der følger fiskens form */
+#interactive-layer .valgt-fisk img {
+  filter:
+    drop-shadow(0 0 4px white)
+    drop-shadow(0 0 18px #70d9ff);
+}
+
+/* Remove frame from buttons */
+.clean-btn {
+  appearance: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Keep these fish down in the water */
+#hornfisk,
+#konge-febars,
+#papegoejefisk,
+#pincetfisk {
+  position: absolute;
+  left: 0%;
+  top: 85%;
+  z-index: 12;
+}
+
+/* Storcenter Nord logo in the top-left corner */
 #center-logo {
   position: absolute;
   top: 20px;
@@ -86,6 +470,7 @@ body {
 }
 
 /* OVERSKRIFT OG INTROTEKST */
+/* Text DYK NED OG..*/
 #intro-header {
   text-align: center;
   position: absolute;
