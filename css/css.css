@@ -421,7 +421,7 @@ body {
   max-width: 350px;
   padding: 20px;
   background: var(--fiskeboks-bg);
-  color: white;
+  color: var(--tekst-hvid);
   border: 2px solid var(--fiskeboks-kant);
   border-radius: 15px;
 }
