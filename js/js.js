@@ -98,140 +98,73 @@ if (flaskepostKnap && kortVindue) {
 
     // Efter 10 sekunder (10000 millisekunder) skifter vi tilbage til den normale nutte
     nutteUr = setTimeout(function () {
-      billede.src = "svg/louises_nutte1.svg";
+      nutteBillede.src = "svg/louises_nutte1.svg";
     }, 10000);
   });
 }
 
-
-// 5. VIS FISKENS OPLYSNINGER OG PLACER BOKSEN
+// 5. VIS FISKENS OPLYSNINGER
+//    Når man trykker på en fisk, sker det her:
+//    1) Gammel lyd stopper
+//    2) Vi finder fiskens ID (fx "F008")
+//    3) Vi slår fisken op i fiskData.js
+//    4) Vi skriver oplysningerne i infoboksen og viser den
+//    5) Fiskene holder pause, og fiskens lyd afspilles
 // ------------------------------------------------------------
 function visFisk(klikHaendelse) {
-  const trykketKnap = klikHaendelse.currentTarget;
-  const fiskId = trykketKnap.dataset.fishId;
 
-  const valgtFisk = fishData.find(function (enkeltFisk) {
-    return enkeltFisk.id === fiskId;
-  });
-
-  if (!valgtFisk) return;
-
-  // Stop den tidligere lyd
+  // 1) Hvis en lyd spiller, så stop den
   if (lyd) {
     lyd.pause();
   }
 
-  // Skriv fiskens oplysninger
-  document.getElementById("fishName").textContent = valgtFisk.name;
+  // 2) Hvilken knap blev der trykket på?
+  const trykketKnap = klikHaendelse.currentTarget;
 
-  document.getElementById("fishHabitat").textContent =
-    "Jeg bor i… " + valgtFisk.habitat;
+  // Hvilket nummer har fisken? Det står i HTML som data-fish-id (fx "F008")
+  const fiskId = trykketKnap.dataset.fishId;
 
-  document.getElementById("fishFact").textContent =
-    "Vidste du, at… " + valgtFisk.funFact;
+  // 3) Find fisken i listen "fishData" (den ligger i fiskData.js)
+  //    find() kigger på én fisk ad gangen og stopper, når id'et passer
+  const valgtFisk = fishData.find(function (enkeltFisk) {
+    return enkeltFisk.id === fiskId;
+  });
 
-  // Fjern markeringen fra den tidligere fisk
+  // Hvis fisken ikke findes i listen, gør vi ikke mere
+  if (!valgtFisk) {
+    return;
+  }
+
+  // 4) Skriv fiskens oplysninger ind i infoboksen
+  const fiskNavn = document.getElementById("fishName");
+  const fiskLevested = document.getElementById("fishHabitat");
+  const fiskSjovtFaktum = document.getElementById("fishFact");
+
+  fiskNavn.textContent = valgtFisk.name;
+  fiskLevested.textContent = "Jeg bor i… " + valgtFisk.habitat;
+  fiskSjovtFaktum.textContent = "Vidste du, at… " + valgtFisk.funFact;
+
+  // Fjern markeringen fra den fisk, der var valgt før
   const forrigeValgteFisk = document.querySelector(".valgt-fisk");
 
   if (forrigeValgteFisk) {
     forrigeValgteFisk.classList.remove("valgt-fisk");
   }
 
-  // Fremhæv den valgte fisk og pausér svømningen
+  // Marker den fisk, der lige er trykket på
   trykketKnap.classList.add("valgt-fisk");
+
+  // Vis infoboksen (den er skjult fra start)
+  fishInfo.hidden = false;
+
+  // 5) Få alle fisk til at holde pause
+  //    JavaScript sætter bare en klasse på body. CSS'en gør selve arbejdet
   document.body.classList.add("frys-fisk");
 
-  // Vis boksen og beregn dens placering
-  fishInfo.hidden = false;
-  fishInfo.scrollTop = 0;
-  placerFaktaboks(trykketKnap);
-
-  // Afspil fiskens sang
+  // Afspil fiskens lyd
   lyd = new Audio(valgtFisk.audioFile);
   lyd.play();
 }
-
-// Find plads til faktaboksen uden at dække den valgte fisk
-function placerFaktaboks(fiskeKnap) {
-  if (!fishInfo || fishInfo.hidden) return;
-
-  const afstand = 16;
-  const skaermBredde = document.documentElement.clientWidth;
-  const skaermHoejde = window.innerHeight;
-
-  // Nulstil en eventuel midlertidig flytning
-  fiskeKnap.style.setProperty("--fisk-flyt-x", "0px");
-  fiskeKnap.style.setProperty("--fisk-flyt-y", "0px");
-
-  // Start med boksens størrelse fra CSS
-  fishInfo.style.width = "";
-  fishInfo.style.maxHeight = "";
-
-  const fisk = fiskeKnap.getBoundingClientRect();
-  const normalBredde = fishInfo.getBoundingClientRect().width;
-
-  // Mål pladsen på begge sider af fisken
-  const pladsVenstre = Math.max(0, fisk.left - afstand * 2);
-
-  const pladsHoejre = Math.max(
-    0,
-    skaermBredde - fisk.right - afstand * 2
-  );
-
-  const bedstePlads = Math.max(pladsVenstre, pladsHoejre);
-  const boksBredde = Math.min(normalBredde, bedstePlads);
-
-  // Placér boksen på den side, der har mest plads
-  if (boksBredde >= Math.min(240, normalBredde)) {
-    fishInfo.style.width = boksBredde + "px";
-
-    if (pladsVenstre >= pladsHoejre) {
-      fishInfo.style.left = afstand + "px";
-    } else {
-      fishInfo.style.left =
-        skaermBredde - boksBredde - afstand + "px";
-    }
-
-    return;
-  }
-
-  // Hvis der ikke er plads ved siden af:
-  // Placér fisken over boksen i den nederste halvdel
-  const pladsTilBoks =
-    skaermHoejde / 2 - fisk.height - afstand * 3;
-
-  fishInfo.style.width = normalBredde + "px";
-  fishInfo.style.left =
-    (skaermBredde - normalBredde) / 2 + "px";
-  fishInfo.style.maxHeight = Math.max(0, pladsTilBoks) + "px";
-
-  const boks = fishInfo.getBoundingClientRect();
-
-  const flytX =
-    skaermBredde / 2 - (fisk.left + fisk.width / 2);
-  const flytY = boks.top - afstand - fisk.bottom;
-
-  fiskeKnap.style.setProperty("--fisk-flyt-x", flytX + "px");
-  fiskeKnap.style.setProperty("--fisk-flyt-y", flytY + "px");
-}
-
-// Opdatér placeringen, når vinduet eller fiskebilledet ændres
-function opdaterFaktaboksPlacering() {
-  const valgtFisk = document.querySelector(".valgt-fisk");
-
-  if (valgtFisk && fishInfo && !fishInfo.hidden) {
-    placerFaktaboks(valgtFisk);
-  }
-}
-
-window.addEventListener("resize", opdaterFaktaboksPlacering);
-
-// Håndterer også, at Nutte skifter billede
-document.addEventListener("load", function (haendelse) {
-  if (haendelse.target instanceof HTMLImageElement) {
-    opdaterFaktaboksPlacering();
-  }
-}, true);
 
 // 6. GØR FISKENE KLIKBARE
 //    Listen herunder er id'erne på fiskenes knapper i HTML.
