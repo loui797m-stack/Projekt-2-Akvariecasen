@@ -37,7 +37,7 @@ Objektet er **fisk**. Hver fisk har disse attributter i `js/fiskData.js`: navn, 
 | F003 | Papegøjefisk          | Oksana   |
 | F004 | Søhest                | Louise   |
 | F005 | Pincetfisk            | Louise   |
-| F006 | Krabbe                | Louise   |
+| F006 | Krabbe                | Peter    |
 | F007 | Nutte (pindsvinefisk) | Louise   |
 | F008 | Hammerhaj             | Louise   |
 
