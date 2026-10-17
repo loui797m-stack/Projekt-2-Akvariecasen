@@ -22,8 +22,8 @@ body {
   width: 100%;
   overflow-x: hidden;
   background-color: var(--hav-blaa);
-  user-select: none; /* Forhindrer at man kan markere tekst ved et uheld */
-  touch-action: manipulation; /* Fjerner forsinkelse og forhindrer double-tap zoom */
+  user-select: none; 
+  touch-action: manipulation; 
 }
 
 .aquarium {
@@ -241,7 +241,7 @@ body {
 }
 
 .clean-btn img {
-  transition: transform 0.2s ease; /* Sørger for at de fjedrer blødt tilbage */
+  transition: transform 0.2s ease;
 }
 
 /* Fælles placering for disse fire fisk */
