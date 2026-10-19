@@ -402,7 +402,7 @@ body {
 
 #bobler_1 {
   position: absolute;
-  bottom: 22vw;
+  bottom: 30vw;
   left: 10%;
   width: 20vw;
   height: auto;
@@ -415,7 +415,7 @@ body {
   position: absolute;
   bottom: 10vw;
   left: 40%;
-  width: 15vw;
+  width: 20vw;
   height: auto;
   z-index: 1000;
   transform-origin: bottom center;
