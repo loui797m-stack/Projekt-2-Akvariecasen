@@ -311,7 +311,7 @@ body {
 /* SØHEST */
 #soehest {
   position: absolute;
-  top: 75%;
+  top: 78%;
   left: 0;
   z-index: 10;
   animation: swim_soehest 22s ease-in-out infinite;
